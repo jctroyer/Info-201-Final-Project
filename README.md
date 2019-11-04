@@ -30,14 +30,15 @@ The sensitive subject of terrorist attacks will be addressed by bringing attenti
 
 ## 3.0 POSSIBLE DATASETS  
 Describe two possible data sets that you might work with. Include name, short description [30-60 words], link, and number of observations and number of attributes. - Jaz
-https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv
-https://data.world/data-society/global-terrorism-data
+- [This interactive tool](https://mihiriyer.shinyapps.io/MentalHealth/) shows statistics from the Veterans Affairs department for 2015. You can search by such measures as prevalence, testing, and confirmed diagnosis percentages at VA hospitals around the USA.
+- [This dataset](https://data.world/data-society/global-terrorism-data) provides a lot of data. More information can be found at https://data.world/data-society/global-terrorism-data  
+- [This dataset](https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv)  
 
 ## 4.0 INFORMATION VISUALIZATIONS
-Present two possible information visualizations that might help you address the problem. In two captions, describe how they work [30-100 words] - Dorothy
-
+![Heatmap of world representing which countries have been impacted by terrorism](images/terrorism_impact.png)
 _Figure 1_. This graphic shows the impact of terrorism by country. By using progressing shades of red to differentiate how much each country is impacted on the world map, viewers can see trends of where terrorism has the largest influence by area. This help us more easily pinpoint which regions of the world suffer most from terrorism and guide further research and exploration into why that may be.   
 
+![Graph showing the global number of deaths by terrorism per year from 1998 to 2016](images/terrorism_deaths.jpg)
 _Figure 2_. This graphic shows the global number of deaths by terrorism per year, highlighting key events and differentiating countries with the highest death rates. By charting the countries with the highest death rates in comparison to the rest of the world, viewers can see how high the impact of terrorism is within those countries. This visualization shows which countries were most affected by terrorist attacks in relation to one another, particularly countries that are highly publicized in countries like the USA (i.e. Iraq and Afghanistan). This can help us better contextualize these attacks in history, which can help us address our potential research questions.
 
 
