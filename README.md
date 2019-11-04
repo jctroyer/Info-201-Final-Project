@@ -56,7 +56,7 @@ This dataset can be found at: https://www.kaggle.com/START-UMD/gtd
 ![Heatmap of world representing which countries have been impacted by terrorism](images/terrorism_impact.png)
 _Figure 1_. This graphic shows the impact of terrorism by country. By using progressing shades of red to differentiate how much each country is impacted on the world map, viewers can see trends of where terrorism has the largest influence by area. We hope to implement a similar data visualization to help users more easily pinpoint which regions of the world suffer most from terrorism and guide further research and exploration into why that may be. Our visualization might also allow the user to adjust the heatmap to view various aspects of terrorism by country such as cause.    
 
-![Graph showing the global number of deaths by terrorism per year from 1998 to 2016](images/terrorism_deaths.jpg)
+![Graph showing the global number of deaths by terrorism per year from 1998 to 2016](images/terrorism_deaths.jpg)  
 _Figure 2_. This graphic shows the global number of deaths by terrorism per year, highlighting key events and differentiating countries with the highest death rates. By charting the countries with the highest death rates in comparison to the rest of the world, viewers can see how high the impact of terrorism is within those countries. This visualization shows which countries were most affected by terrorist attacks in relation to one another, particularly countries that are highly publicized in countries like the USA (i.e. Iraq and Afghanistan). A similar visualization could help us better contextualize these attacks in history, which can help us address our potential research questions.
 
 
