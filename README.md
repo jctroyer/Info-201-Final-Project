@@ -10,15 +10,9 @@ Autumn 2019
 
 ## 1.0 INTRODUCTION PROBLEM SITUATION  
 ### 1.1 Problem Situation:
-
-Describe the general problem situation – Who are the stakeholders? What is the setting of the problem? What values and tensions are in play? What policy and ethic
-elements may exist? [60-100 words]  
-
-Terrorism is the unlawful and systematic use of violence against a state, country, or group of people, motivated by various ideologies, as a form of political coercion. Direct stakeholders include political entities (i.e. a government, political figure, or organization), both as targets and instigators. Indirect
-Stakeholders: Political entity, indirectly civilians
-Setting: International
-Values: Political
-Policy and ethics: humanitarian policies, human protection  
+Terrorism is the unlawful and systematic use of violence against a state, country, or group of people, motivated by various ideologies, as a form of political coercion. It occurs on local, national, and international levels. Take - for instance - the white supremacist attack at the "Unite the Rally" attack in 2019, which occurred on US soil in Charlottesville, VA by Americans, and the infamous al-Qaeda attack on the USA on September 11, 2001, which was a national terrorist attack.
+_Direct stakeholders_ include political entities (i.e. a government, political figure, or organization), both as targets and instigators. As instigators, political entities  plan and execute attacks against other states, nations, other political groups, or specific political figures to further some political, religious, or other ideological objective. _Indirect stakeholders_ include civilians residing in or around the targeted person, group, or nation.  
+Terrorism is a result of political, religious, and other ideological tensions as well as differing fundamental values between different groups of people. This may include and affect political policies (regarding national security, political interference with other states and nations, and use of military forces) and humanitarian ethics (for example, those ethics and policies imposed and established by the United Nations).    
 
 ### 1.2 What is the Problem?
 [60–100 words]. - Jaz
