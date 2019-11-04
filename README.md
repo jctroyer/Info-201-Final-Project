@@ -20,18 +20,15 @@ Terrorism targets innocent civilians, often resulting in death. The Global Terro
 Causes political unrest
 
 ### 1.3 Why Does It Matter?  
-Terrorism affects individuals, communities, and societies on multiple levels.  Aside from the obvious physical and psychological impacts on direct victims of terrorism, terrorism causes deep-rooted fear and insecurity within affected populations.  This uncertainty for safety also has direct effects on the economy (both direct economic destruction and market uncertainty) to the political health of the State.  
+Terrorism affects individuals, communities, and societies on multiple levels.  Aside from the obvious physical and psychological impacts on direct victims of terrorism, terrorism causes deep-rooted fear and insecurity within affected populations. This uncertainty for safety also has direct effects on the economy (both direct economic destruction and market uncertainty) to the political health of the State. This political unrest could lead to more violence and further instability, which could be more dangerous for innocent civilians and result in international repercussions as those civilians could potentially try to immigrate.  
 
 ### 1.4 How Will it be Addressed?  
-How will you address the problem [60–100 words]
-Raising awareness for smaller countries, especially those that do not get media attention. A non-discriminatory data viz.
-
-The sensitive subject of terrorist attacks will be addressed by bringing attention to the underlying issues that bring forth terrorism and its subsequent political violence. By understanding the root causes and finding correlations between various data about those attacks (date, location, cause, etc.) can bring more awareness to aspects of terrorism. Helping us understand these variables of terrorism can potentially help with prevention and perhaps lower the severity of the attacks.
+The sensitive subject of terrorist attacks will be addressed by bringing attention to the underlying issues that bring forth terrorism and its subsequent political violence. By understanding the root causes and finding correlations between various data about those attacks (date, location, cause, etc.) we can bring more awareness to aspects of terrorism and to targeted regions that are not widely publicized by the media. Understanding these variables of terrorism can potentially help with prevention and perhaps lower the severity of the attacks in all or almost all regions of the world, including those that are not highly publicized (such as Yemen).
 
 ## 2.0 RESEARCH QUESTIONS  
-Given the problem situation and your discussion of the problem, propose two specific research questions. - Joseph
-What can we find using this data set?
-Publicized attacks vs recorded.
+- Can we predict where there might be another terrorist attack in the future? Are there other datasets we can use to further find relationships between certain aspects of attacks (ex: New political developments)? (What can we find using this data set?)   
+- What correlations exist between terrorist attacks that have been publicized by the media and occurrences of terrorist attacks in those areas? Can this data be used to potentially provide training to areas that are more likely to experience an attack? (Publicized attacks vs recorded.)  
+- How might people using this dataset cut down the random acts of terrorism (data that seems to not have any sufficient meaning for the current problem) to provide a much more accurate representation of the nature of these terrorism attacks due to certain causes? (Determining good vs bad data)  
 
 ## 3.0 POSSIBLE DATASETS  
 Describe two possible data sets that you might work with. Include name, short description [30-60 words], link, and number of observations and number of attributes. - Jaz
