@@ -27,19 +27,37 @@ The sensitive subject of terrorist attacks will be addressed by bringing attenti
 - Can we predict where there might be another terrorist attack in the future? Are there other datasets we can use to further find relationships between certain aspects of attacks (ex: New political developments)? (What can we find using this data set?)   
 - What correlations exist between terrorist attacks that have been publicized by the media and occurrences of terrorist attacks in those areas? Can this data be used to potentially provide training to areas that are more likely to experience an attack? (Publicized attacks vs recorded.)  
 - How might people using this dataset cut down the random acts of terrorism (data that seems to not have any sufficient meaning for the current problem) to provide a much more accurate representation of the nature of these terrorism attacks due to certain causes? (Determining good vs bad data)  
+- Which country was most affected by acts of terrorism?
+- Which country had the most amount of deaths by terrorism?
+- What was the most common motive/cause/reason behind terrorism? Was it political? Religious?
 
 ## 3.0 POSSIBLE DATASETS  
-Describe two possible data sets that you might work with. Include name, short description [30-60 words], link, and number of observations and number of attributes. - Jaz
-- [This interactive tool](https://mihiriyer.shinyapps.io/MentalHealth/) shows statistics from the Veterans Affairs department for 2015. You can search by such measures as prevalence, testing, and confirmed diagnosis percentages at VA hospitals around the USA.
-- [This dataset](https://data.world/data-society/global-terrorism-data) provides a lot of data. More information can be found at https://data.world/data-society/global-terrorism-data  
-- [This dataset](https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv)  
+### 3.1 Potential Source #1
+**About the Dataset**  
+[The Global Terrorism Data](https://data.world/data-society/global-terrorism-data) provides several datasets that contain global terrorism data from 1975 to 2015. It contains various descriptive characteristics pertaining to various terroristic acts such as country, location, date, time, reason, etc. A codebook for this dataset is also available, easily accessible, and seemingly usable.
+
+**Dataset Dimensions** (if all datasets were to be merged into one collective data frame to include information from 1975-2015):
+- 102,448 observations (rows)
+- 139 features (columns)  
+
+This dataset can be found at: https://data.world/data-society/global-terrorism-data  
+
+### 3.2 Potential Source #2
+**About the Dataset**  
+- [The Global Terrorism Database](https://www.kaggle.com/START-UMD/gtd) contains information on global terrorist attacks from 1970-2017 (excluding 1993). The database documents details such as event, day, year, location, etc. and is maintained by researchers from the National Consortium for the Study of Terrorism and Responses to Terrorism (START), headquartered at the University of Maryland.    
+
+**Dataset Dimensions** (if all datasets were to be merged into one collective data frame to include information from 1975-2015):
+- 180,000 observations (rows)
+- 135 features (columns)  
+
+This dataset can be found at: https://www.kaggle.com/START-UMD/gtd
 
 ## 4.0 INFORMATION VISUALIZATIONS
 ![Heatmap of world representing which countries have been impacted by terrorism](images/terrorism_impact.png)
-_Figure 1_. This graphic shows the impact of terrorism by country. By using progressing shades of red to differentiate how much each country is impacted on the world map, viewers can see trends of where terrorism has the largest influence by area. This help us more easily pinpoint which regions of the world suffer most from terrorism and guide further research and exploration into why that may be.   
+_Figure 1_. This graphic shows the impact of terrorism by country. By using progressing shades of red to differentiate how much each country is impacted on the world map, viewers can see trends of where terrorism has the largest influence by area. We hope to implement a similar data visualization to help users more easily pinpoint which regions of the world suffer most from terrorism and guide further research and exploration into why that may be. Our visualization might also allow the user to adjust the heatmap to view various aspects of terrorism by country such as cause.    
 
 ![Graph showing the global number of deaths by terrorism per year from 1998 to 2016](images/terrorism_deaths.jpg)
-_Figure 2_. This graphic shows the global number of deaths by terrorism per year, highlighting key events and differentiating countries with the highest death rates. By charting the countries with the highest death rates in comparison to the rest of the world, viewers can see how high the impact of terrorism is within those countries. This visualization shows which countries were most affected by terrorist attacks in relation to one another, particularly countries that are highly publicized in countries like the USA (i.e. Iraq and Afghanistan). This can help us better contextualize these attacks in history, which can help us address our potential research questions.
+_Figure 2_. This graphic shows the global number of deaths by terrorism per year, highlighting key events and differentiating countries with the highest death rates. By charting the countries with the highest death rates in comparison to the rest of the world, viewers can see how high the impact of terrorism is within those countries. This visualization shows which countries were most affected by terrorist attacks in relation to one another, particularly countries that are highly publicized in countries like the USA (i.e. Iraq and Afghanistan). A similar visualization could help us better contextualize these attacks in history, which can help us address our potential research questions.
 
 
 ## 5.0 TEAM COORDINATION  
@@ -66,6 +84,10 @@ If there are any communication challenges, we will address it through messenger 
 We have no questions or comments about the project at this time.
 
 ## 7.0 REFERENCES  
-http://visionofhumanity.org/app/uploads/2017/11/Global-Terrorism-Index-2017.pdf
+Cato Institute. (2017). Cato 2017 Human Freedom Index (Version 3). [Data File]. Retrieved from https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv  
+
+Data Society. (2016). Global Terrorism Data. [Data File]. Retrieved from https://data.world/data-society/global-terrorism-data/contributors  
+
+Institute for Economics & Peace. (2018). Retrieved from http://visionofhumanity.org/indexes/terrorism-index/  
 
 Loayza, N. (2016, July 29). How to defeat terrorism: Intelligence, integration, and development. Retrieved from https://www.brookings.edu/blog/future-development/2016/07/25/how-to-defeat-terrorism-intelligence-integration-and-development/.
