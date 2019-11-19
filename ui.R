@@ -4,19 +4,11 @@ library(shiny)
 ui <- fluidPage(
   titlePanel("Global Terrorism"),
   tabsetPanel(
-    tabPanel("Background & Research Question", fluid = TRUE),
+    tabPanel("About The Project", fluid = TRUE),
     
-    tabPanel("Data Visualizations",
-             fluid = TRUE,
-             navlistPanel(
-               tabPanel("Data Viz 1"),
-               tabPanel("Data Viz 2")
-             )
-    ),
+    tabPanel("Data Visualization 1", fluid = TRUE),
     
-    tabPanel("Conclusions", fluid = TRUE),
-    
-    tabPanel("About the Tech", fluid = TRUE),
+    tabPanel("Data Vizualization 2", fluid = TRUE),
     
     tabPanel("About Us", fluid = TRUE)
   )
