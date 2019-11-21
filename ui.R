@@ -12,6 +12,13 @@ ui <- fluidPage(
     # Project overview tab
     tabPanel("About The Project",
       fluid = TRUE,
+
+      # Link to tech report
+      h4("Technical Report"),
+      a("Access technical report here",
+        href="https://github.com/jctroyer/Info-201-Final-Project/wiki",
+        target="_blank"),
+      
       h4("Background"),
       p("Terrorism is the unlawful and systematic use of violence against a
         state, country, or group of people, motivated by various ideologies,

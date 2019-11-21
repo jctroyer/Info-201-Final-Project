@@ -33,7 +33,7 @@ target_map <- function(df, world_data, attack_type) {
   # Generate map
   leaflet(world_data) %>%
     addTiles() %>%
-    setView(lat = 40, lng = 0, zoom = 1.5) %>%
+    setView(lat = 30, lng = 0, zoom = 1.5) %>%
     addPolygons(
       data = world_data,
       stroke = FALSE, smoothFactor = 0.2, fillOpacity = 0.7,
