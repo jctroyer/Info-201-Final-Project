@@ -1,4 +1,8 @@
+# Load packages
 library(dplyr)
+library(ggplot2)
+library(leaflet)
+library(rgdal)
 
 # Load dataframe
 terrrorism <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)

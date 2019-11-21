@@ -2,6 +2,7 @@
 library(dplyr)
 library(ggplot2)
 library(leaflet)
+library(tidyr)
 
 # Right now, the countries aren't matching up so I need to figure out how to match up
 # the ISO codes of the shp and the df
