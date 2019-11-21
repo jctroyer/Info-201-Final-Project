@@ -1,3 +1,10 @@
+```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+library(knitr)
+source("tech_report_table.R")
+```
+
 # **INFO201 FINAL PROJECT | Technical Report**  
 
 **Project Code Name:** Global Terrorism  
@@ -207,6 +214,7 @@ Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
 ## APPENDIX 1: DATA DICTIONARY  
 
 
+`r table`
 
 ## APPENDIX 2: REFLECTIONS 
 
