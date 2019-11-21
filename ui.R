@@ -54,16 +54,7 @@ ui <- fluidPage(
         Responses to Terrorism (START), headquartered at the University of
         Maryland. All data wrangling was done in R and deployed on this site
         using Shiny.  Additionally, we used packages such as ggplot and leaflet
-        to create the engaging data visualizations."),
-
-      h4("About The Group"),
-      p("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.")
+        to create the engaging data visualizations.")
     ),
 
     tabPanel("Casualties Map", fluid = TRUE, sidebarLayout(
@@ -86,17 +77,40 @@ ui <- fluidPage(
       )
     )),
 
-    tabPanel("Data Vizualization 2", fluid = TRUE),
+    tabPanel("Data Vizualization 2", fluid = TRUE,
+      sidebarLayout(
+        sidebarPanel(
+          h4("Data Viz 2 Input")
+        ),
+        mainPanel(
+          h4("Data Viz 3 Output")
+        )
+      )
+    ),
+
+    tabPanel("Data Visualization 3", fluid = TRUE,
+      sidebarLayout(
+        sidebarPanel(
+          h4("Data Viz 3 Input")
+        ),
+        mainPanel(
+          h4("Data Viz 3 Output")
+        )
+      )
+    ),
 
     tabPanel("Conclusion",
       fluid = TRUE,
       h4("Conclusion"),
-      p("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit es
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupida
-        non proident, sunt in culpa qui officia deserunt mollit anim laborum.")
+      p("We learned that global terrorism is immensely complex and that it is
+        much too broad, complex, and large of an issue to make causal or
+        predictive claims and analyses. However, through discussion about
+        research questions, data visualizations, and future plans, we have
+        learned to develop our critical thinking and coding skills. Another
+        noteworthy lesson we learned was that it can be difficult to find
+        datasets to fit our needs, and sometimes, we need to challenge ourselves
+        to work with what we have available and to generate creative
+        solutions.")
     )
   )
 )
