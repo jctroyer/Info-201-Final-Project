@@ -1,4 +1,4 @@
-# Project Code Name: Global Terrorism**
+# Project Code Name: Global Terrorism
 
 ## Authors: Joseph Altamira, Jazmynn Combes-Troyer, Dorothy Lu
 
