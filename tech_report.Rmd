@@ -11,29 +11,29 @@ Autumn 2019
 ## 1.0 INTRODUCTION PROBLEM SITUATION  
 ### 1.1 Problem Situation:
 
-Terrorism is the unlawful and systematic use of violence against a state, country, or group of people, motivated by various ideologies, as a form of political coercion. Global acts of terrorism have impacted hundreds, thousands, and millions of people throughout history in social, economic, and political ways. 
+Terrorism is the unlawful and systematic use of violence against a state, country, or group of people, motivated by various ideologies, as a form of political coercion. Global acts of terrorism have impacted hundreds, thousands, and millions of people throughout history in social, economic, and political ways.  
 
-### 1.1.1 Setting:
+### 1.1.1 Setting
 
-Terrorism occurs on local, national, and international levels. Take - for instance - the white supremacist attack at the "Unite the Rally" attack in 2019, which occurred on US soil in Charlottesville, VA by Americans. This act of terrorism occurred on a more local level. Another example is the infamous al-Qaeda attack on the USA on September 11, 2001, which was a national terrorist attack. On an international level, one can look back on World War II and the Holocaust, which mainly targeted Jewish populations in Western Europe.   
-Terrorism is a result of political, religious, and other ideological tensions as well as differing fundamental values between different groups of people. This may include and affect political policies (regarding national security, political interference with other states and nations, and use of military forces) and humanitarian ethics (for example, those ethics and policies imposed and established by the United Nations).   
+Terrorism occurs on local, national, and international levels. Take - for instance - the white supremacist attack at the "Unite the Rally" attack in 2019, which occurred on US soil in Charlottesville, VA by Americans. This act of terrorism occurred on a more local level. Another example is the infamous al-Qaeda attack on the USA on September 11, 2001, which was a national terrorist attack. On an international level, one can look back on World War II and the Holocaust, which mainly targeted Jewish populations in Western Europe.  
 
 ### 1.1.2 Stakeholders
 
-Direct stakeholders include political entities (i.e. a government, political figure, or organization), both as targets and instigators. As instigators, political entities plan and execute attacks against other states, nations, other political groups, or specific political figures to further some political, religious, or other ideological objective. As targets, these political entities suffer damage from their attackers which may include death, injury, and political and economic harm.
-Indirect stakeholders include civilians residing in or around the targeted person, group, or nation. These civilians are typically citizens of a state and are not direct or intended targets. Civilians may suffer personal loss via death or injury of themselves or loved ones as well as property damage or socioeconomic difficulties that may result from damage sustained from main stakeholders (such as governments or major political leaders).
+_Direct stakeholders_ include political entities (i.e. a government, political figure, or organization), both as targets and instigators. As instigators, political entities plan and execute attacks against other states, nations, other political groups, or specific political figures to further some political, religious, or other ideological objective. As targets, these political entities suffer damage from their attackers which may include death, injury, and political and economic harm.  
+
+_Indirect stakeholders_ include civilians residing in or around the targeted person, group, or nation. These civilians are typically citizens of a state and are not direct or intended targets. Civilians may suffer personal loss via death or injury of themselves or loved ones as well as property damage or socioeconomic difficulties that may result from damage sustained from main stakeholders (such as governments or major political leaders).
 
 ### 1.1.3 Values and Tension: 
 
-The typical values and tensions that drive terrorism involve disagreements in religious, political, and economic perspectives. Although the target types (i.e. individual, government, organization) of terrorist attacks are fairly diverse, it seems that a large percentage of attacks target governments and private property. These attacks cause government workers and general populations with a significant form of capital (money) fear for their well-being, which ultimately affects their quality of life. 
+The typical values and tensions that drive terrorism involve disagreements in religious, political, and economic perspectives. Although the target types (i.e. individual, government, organization) of terrorist attacks are fairly diverse, it seems that a large percentage of attacks target governments and private property. These attacks cause government workers and general populations with a significant form of capital (money) fear for their well-being, which ultimately affects their quality of life.  
 
 ### 1.1.4 General Issues
 
-The general issues at stake are the health and well-being of individuals in terror-stricken countries. Terrorism is an extreme way of expressing a political disagreement and affects individuals, communities, and societies on multiple levels. Aside from the obvious physical and psychological impacts on direct victims, terrorism causes deep-rooted fear and insecurity within affected populations. These feelings of fear and insecurity can lead to larger 
+The general issues at stake are the health and well-being of individuals in terror-stricken countries. Terrorism is an extreme way of expressing a political disagreement and it affects individuals, communities, and societies on multiple levels. Aside from the obvious physical and psychological impacts on direct victims, terrorism causes deep-rooted fear and insecurity within affected populations. These feelings of fear and insecurity can lead to larger social and economic issues within affected populations, which is evident in political uprisings, economic depressions, and social movements.  
 
 ### 1.1.5 Policy and Ethics
 
-Terrorism is a result of political, religious, and other ideological tensions as well as differing fundamental values between different groups of people. This may include and affect political policies (regarding national security, political interference with other states and nations, and use of military forces) and humanitarian ethics (for example, those ethics and policies imposed and established by the United Nations). Current policies in place can also drive acts of terrorism as some ideological groups may disagree with those policies and execute acts of terrorism as a way to express their dissent and push their own ideological agendas. 
+Terrorism is a result of political, religious, and other ideological tensions as well as differing fundamental values between different groups of people. This may include and affect political policies (regarding national security, political interference with other states and nations, and use of military forces) and humanitarian ethics (for example, those ethics and policies imposed and established by the United Nations). Current policies in place can also drive acts of terrorism as some ideological groups may disagree with those policies and execute acts of terrorism as a way to express their dissent and push their own ideological agendas.  
 
 ### 1.2 What is the Problem?
 
@@ -74,10 +74,11 @@ It is important to raise awareness about this issue in order to promote change, 
 Why do you care about this problem and what motivates you to work on it? 
 The members of our group, like many Americans and other citizens around the world, is generally uninformed about both small and large scale terrorist attacks that have happened in the last few decades. We are interested in this topic because we would like to learn more about how these attacks affect humanitarian and movements around the world and how they could potentially affect us if we as a community, state, or nation were to become the next target of an attack.
 
-## **2.0 Research questions **
+
+## 2.0 RESEARCH QUESTIONS 
 
 
-## **3.0 The Data Set(s)** 
+## 3.0 THE DATA SET(S)   
 
 The dataset that will be used throughout this project is called  “Global Terrorism Database” from kaggle.com. It lists over 180,000 terrorist attacks from 1970 to 2017. The GTD contains more than 100 variables, using information from media outlets/articles that are not classified. However, the current data is too large for github so we took off certain rows (years we are not using) and columns that we will not be the main focus of our project. 
 
@@ -128,13 +129,13 @@ _Please refer to 1.3.1:_
 
 See Appendix 1: Data Dictionary. 
 
-## 4.0 Information visualizations 
+## 4.0 INFORMATION VISUALIZATIONS 
 
 **Map**
 
 For our first Information visualization we decided to do a map. We are fairly familiar with how to code a map in leaflet, so we assume creating a shiny app will not be as difficult. Data comes from areas of the world, so what better way to display it than a geographical map? A map visualization is a great way of showing the robusts data we have because of the number of variables we can show within. At a glance you can tell certain information about the data, if you wanted more variables or a more in depth analysis of the type of attack it is, you can easily switch the column that is being used by the code. In addition, you would be able to see more details if a region is clicked upon. 
 
-## **5.0 Technical Description of Shiny Application** 
+## 5.0 TECHNICAL DESCRIPTION OF SHINY APPLICATION   
 
 ### 5.1 Loading the Data
 
@@ -143,24 +144,27 @@ Certain data were selected and filtered, and were put into a shape (.shp) file. 
 
 ### 5.2 Libraries Used
 
-Leaflet is used to create the map and the popup widget that displays information about terror attacks in different areas of the world. 
-Dplyr is used to trim and wrangle the data such that only relevant columns are displayed in the data set. It is also used to select and filter certain columns and rows to obtain specific information for the leaflet popups. 
-Shiny is used to create the UI and server. 
-ggplot2 is a supporting library to format various elements of the map. 
+**Leaflet** is used to create the map and the popup widget that displays information about terror attacks in different areas of the world. 
+
+**Dplyr** is used to trim and wrangle the data such that only relevant columns are displayed in the data set. It is also used to select and filter certain columns and rows to obtain specific information for the leaflet popups. 
+
+**Shiny** is used to create the UI and server.  
+
+**ggplot2** is a supporting library to format various elements of the map. 
 
 ### 5.3 Organization of Code
 
-The code is organized similarly to a5. The home directory contains a data folder, an R file which holds the data, another R file that holds the analysis needed for the map and the map popups. 
+The home directory contains analysis, data, and images folders, a gitignore file, a README.r file, and the server and ui files. 
+The analysis file contains R files used for data wrangling (i.e. calculating total casualties by region). The data file contains the datasets used in the project, including the original datasets and smaller, cleaner datasets that are easier to process for analysis. The images folder contains images used in the reports and in other parts of the project.
 
 ### 5.4 Questions to Answer and Explore
 
-What questions, if any, will you be answering with statistical analysis/machine learning? 
-How many people are affected by various attack types? (Measured by number of casualties, injuries, property damage)
-Which attack types are most prevalent in different countries? 
-At a glance, which area of the world seems to be impacted most by terrorist attacks? 
-What groups of people are most affected or most targeted by terrorist attacks?
+- How many people are affected by various attack types? (Measured by number of casualties, injuries, property damage)
+- Which attack types are most prevalent in different countries? 
+- At a glance, which area of the world seems to be impacted most by terrorist attacks? 
+- What groups of people are most affected or most targeted by terrorist attacks?
 
-## **6.0 Conclusion**
+## 6.0 CONCLUSION
 
 ### 6.1 Strengths and Weaknesses
 
@@ -172,30 +176,33 @@ Main lessons that you learned
 The future work that you or someone else might pursue. 
 
 
-### Acknowledgements 
+### 7.0 ACKNOWLEDGEMENTS 
 
 We wish to acknowledge the help provided by Benjamin Xie in the development of this project.
 
-### References 
+### 8.0 REFERENCES 
 
-Cato Institute. (2017). Cato 2017 Human Freedom Index (Version 3). [Data File]. Retrieved from https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv
-Data Society. (2016). Global Terrorism Data. [Data File]. Retrieved from https://data.world/data-society/global-terrorism-data/contributors
-Institute for Economics & Peace. (2018). Retrieved from http://visionofhumanity.org/indexes/terrorism-index/
+Cato Institute. (2017). Cato 2017 Human Freedom Index (Version 3). [Data File]. Retrieved from https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv  
+
+Data Society. (2016). Global Terrorism Data. [Data File]. Retrieved from https://data.world/data-society/global-terrorism-data/contributors  
+
+Institute for Economics & Peace. (2018). Retrieved from http://visionofhumanity.org/indexes/terrorism-index/  
+
 Loayza, N. (2016, July 29). How to defeat terrorism: Intelligence, integration, and development. Retrieved from https://www.brookings.edu/blog/future-development/2016/07/25/how-to-defeat-terrorism-intelligence-integration-and-development/.
 
-### Appendix 1: Data Dictionary 
+### APPENDIX 1: DATA DICTIONARY  
 
 In this appendix you should describe the variables that make up your data set, including: The name of the variable, a description of its meaning, the data type, and the measurement type. A suggestion format is a table such as this: Variable Name Description Data Type Measurement Type … … … … 
 
 
-### Appendix 2: Reflections 
+### APPENDIX 2: REFLECTIONS 
 
-In this appendix each team member should write a personal reflection on the project [> 150 words]. Topics might include: What you learned, what you found satisfying/frustrating, what you would do differently in the future, how the project positioned you develop your identity for coder, thinker, and innovator, and so forth. 
-Joseph: 
-Jazmynn: 
-Dorothy:  So far, this project has been both immensely challenging and fun. Though I was constantly frustrated with the long (and still currently ongoing) process of debugging, I feel like my self-teaching skills are one of my skills that have greatly increased.  Because I encountered many more roadblocks creating our map than I thought I would, I ended up doing a lot of research into Shiny data visualizations (specifically maps), allowing me to learn about things such as .shp files which I hadn’t encountered before.  Additionally, I think this stage of the project has allowed me to enjoy coding much more, as I really enjoy being able to see a visual product of all the work we’ve been doing and I also feel much more confident in R. In the future, I will try to have a deeper understanding of the code and the underlying processes before using them in a project, as it would definitely allow understanding errors in the output much easier.  This portion of the project has definitely helped me develop my identity as a thinker and coder and allowed me to be more confident in tackling coding issues that I don’t know.
+**Joseph:** I usually like to be the one behind a computer all day coding, however this is the first time I was in a team environment with code involved. As a developer of a team it becomes a lot more stressful with the time crunch, which is why I have a ton of respect for my groupmate, Dorothy. In addition, there are repercussions if something was not done properly and in a timely manner. This is a lot more nerve wrecking than the hackathons I have participated in, where they are very forgiving because it is just usually one weekend. An issue that did come up is that it is a little difficult to find a proper time to meet with everyone, instead it has been more of a one on one rather than a full team meeting. This project does help a little in seeing how a PM operates. Seeing what it takes to set up meetings and deadlines for certain tasks are encouraged to move through milestones swiftly.  
 
-### Appendix 3: Use of Envisioning Cards 
+**Jazmynn:** The project is developing slowly, but surely. I found it difficult to narrow the scope of the project and devise concise yet meaningful research questions that did not extend beyond the limits of our class. It was also difficult to find datasets that provide relevant and useful information to complement the main Global Terrorism Database (GTD) datasets we intend to use. Furthermore, However, upon closer examination of the codebook for the GTD datasets, I became increasingly interested and excited about the data analysis. In other regards, I would normally prefer to design and code rather than write, but for this part of the project, I contributed more to the report than the development of the Shiny app. As a result, I believe this experience challenged my critical thinking skills. With regards to the Shiny app, I did encounter some challenges with deploying the app, but it was immensely satisfying to be able to successfully deploy it after some troubleshooting. Although bugs and errors can be challenging, tackling these problems and searching for solutions is a skill I look forward to further developing as we continue to work on this project as I know that we will encounter more challenges in the near future. In that way, I think I am better preparing myself to be a better coder. In the future, I hope to schedule more regular or more frequent meeting times to work on the project together as a team rather than remotely, individually.
 
-The envisioning cards were used to discuss the direct and indirect stakeholders involved in global terrorist attacks, the social and ethical implications of the problem, and 
-Direct/Indirect Stakeholders
+**Dorothy:** So far, this project has been both immensely challenging and fun. Though I was constantly frustrated with the long (and still currently ongoing) process of debugging, I feel like my self-teaching skills are one of my skills that have greatly increased.  Because I encountered many more roadblocks creating our map than I thought I would, I ended up doing a lot of research into Shiny data visualizations (specifically maps), allowing me to learn about things such as .shp files which I hadn’t encountered before.  Additionally, I think this stage of the project has allowed me to enjoy coding much more, as I really appreciate being able to see a visual product of all the work we’ve been doing and I also feel much more confident in R. In the future, I will try to have a deeper understanding of the code and the underlying processes before using them in a project, as it would definitely allow understanding errors in the output much easier.  This portion of the project has definitely helped me develop my identity as a thinker and coder and allowed me to be more confident in tackling coding issues that I don’t know.
+
+### APPENDIX 3: USE OF ENVISIONING CARDS  
+
+The envisioning cards were used to discuss the direct and indirect stakeholders involved in global terrorist attacks, explore the social and ethical implications of the problem, and consider the strengths and weaknesses of the datasets to be used in the project. 
