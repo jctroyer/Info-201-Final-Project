@@ -402,15 +402,15 @@ Autumn 2019</p>
 </div>
 <div id="what-is-the-problem" class="section level3">
 <h3>1.2 What is the Problem?</h3>
-<p>Acts of terrorism are violent and often ineffective ways of furthering a political or ideological agenda. Hundreds, thousands, and even millions of innocent civilians suffer as a result of terroristic attacks (i.e. the Boston Marathon Bombing, 9/11, the Pulse Nightclub shooting in Orlando, etc.). In addition to civilian casualties, terrorism causes political unrest within the targeted population’s government and people. This can cause instability, thus resulting in economic, social, and political deterioration. Furthermore, terrorism can have a significant impact on international relations, as we have seen with the United States and middle eastern countries like Iraq and Afghanistan.</p>
+<p>Acts of terrorism are violent and often ineffective ways of furthering a political or ideological agenda. Hundreds, thousands, and even millions of innocent civilians suffer as a result of terroristic attacks (i.e. the Boston Marathon Bombing, 9/11, the Pulse Nightclub shooting in Orlando, etc.). Whenever terrorist attacks occur, people often focus on the specific targets of the attacks. However, the attacks can be a significant source of instability for their surroundings, namely the civilians around the targeted person, entity, or area. Furthermore, terrorist attacks inflict damage that most people overlook such as property damage and damage to infrastructure that affect the daily lives of civilians. The problem is that most people do not realize how prevalent and common terrorist attacks are, who they affect beyond the intended target, and where many of these attacks occur.</p>
 </div>
 <div id="why-does-it-matter" class="section level3">
 <h3>1.2.1 Why Does It Matter?</h3>
-<p>Terrorism affects individuals, communities, and societies on multiple levels. Aside from the obvious physical and psychological impacts on direct victims of terrorism, terrorism causes deep-rooted fear and insecurity within affected populations. This uncertainty for safety also has direct effects on the economy (both direct economic destruction and market uncertainty) to the political health of the State. This political unrest could lead to more violence and further instability, which could be more dangerous for innocent civilians and result in international repercussions as those civilians could potentially try to immigrate. In short, terrorism has great political, economic, and humanitarian impacts on targeted populations.</p>
+<p>Terrorism affects individuals, communities, and societies on multiple levels. Aside from the obvious physical and psychological impacts on direct victims of terrorism, terrorism causes deep-rooted fear and insecurity within affected populations. This problem is pertinent for any civilian or member of society as it is difficult to predict when or where the next attack will occur. Therefore, it is important to be aware of the ways in which one can be affected and to potentially prepare ways in which to respond. It is also important in order to be an informed citizen and to be aware of global issues.</p>
 </div>
 <div id="how-will-it-be-addressed" class="section level3">
 <h3>1.3 How Will it be Addressed?</h3>
-<p>The sensitive subject of terrorist attacks will be addressed by bringing attention to the underlying issues that bring forth terrorism and its subsequent political violence. By understanding the root causes and finding correlations between various data about those attacks (date, location, cause, etc.), we can raise awareness and educate the public about various aspects of terrorism and about targeted regions that are not widely publicized by the media. This could potentially help with prevention and perhaps lower the severity of the attacks around the world.</p>
+<p>The sensitive subject of terrorist attacks will be addressed by bringing attention to the number of terrorist attacks that have occurred, where they occurred, and who and what was affected. By gaining awareness of these aspects of terrorism and finding correlations between various data about those attacks (date, location, cause, etc.), we can raise awareness and educate the public about terrorism and about targeted regions that are not widely publicized by the media.</p>
 </div>
 <div id="data-wrangling-and-info-viz" class="section level3">
 <h3>1.3.1 Data Wrangling and Info Viz</h3>
@@ -422,13 +422,19 @@ Autumn 2019</p>
 </div>
 <div id="previous-work" class="section level3">
 <h3>1.4 Previous Work</h3>
-<p>There are multiple existing organizations, researchers, and</p>
+<p>There are multiple existing organizations, researchers, and educators dedicated to studying global terrorism, its effects on international relations, and potential prevention strategies. One example is the organization and team of researchers from which the dataset was created: the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland.</p>
 </div>
 <div id="building-on-previous-work" class="section level3">
 <h3>1.5 Building on Previous Work</h3>
+<p>Rather than focusing on various aspects of terrorism in detail and at large, this project will focus primarily on individuals and impacts on fundamental parts of society such as government. We hope to gain more insight on how unintended stakeholders - namely civilians - are impacted by small and large scale attacks.</p>
 </div>
 <div id="who-cares" class="section level3">
 <h3>1.6 Who Cares?</h3>
+<p>Those who may have special interest and concern about this issue include:</p>
+<ul>
+<li><p>Humanitarians that wish to bring attention to affected populations in order to secure resources and provide aid to help rebuild damaged societies in terms of buildings and infrastructure, mental and physical health and well-being, and general social and political peace</p></li>
+<li><p>Government officials concerned with national security through policy, armed forces, defense, and international relations</p></li>
+</ul>
 </div>
 <div id="why-do-others-care" class="section level3">
 <h3>1.6.1 Why Do Others Care?</h3>
@@ -441,55 +447,32 @@ Autumn 2019</p>
 </div>
 <div id="research-questions" class="section level2">
 <h2>2.0 RESEARCH QUESTIONS</h2>
+<p>Generally speaking, the project will explore the impact of global terrorism in individuals and societies. Impacts on individuals can be operationalized as the number of injuries, casualties, property damage, and personal losses. Impacts on societies can include the type, scale, and target of the attack, especially if it was a large scale attack on a major leading political entity. Questions include:</p>
+<ul>
+<li>Which countries suffered from the most civilian casualties by various attack types?<br />
+</li>
+<li>Does attack type and target impact the number of civilians impacted by the terrorist event?<br />
+</li>
+<li>How do different attack types impact the severity of damage sustained by individuals through personal injury or property damage?</li>
+</ul>
 </div>
 <div id="the-data-sets" class="section level2">
 <h2>3.0 THE DATA SET(S)</h2>
 <p>The dataset that will be used throughout this project is called “Global Terrorism Database” from kaggle.com. It lists over 180,000 terrorist attacks from 1970 to 2017. The GTD contains more than 100 variables, using information from media outlets/articles that are not classified. However, the current data is too large for github so we took off certain rows (years we are not using) and columns that we will not be the main focus of our project.</p>
 <div id="about-the-data-set" class="section level3">
 <h3>3.1 About the Data Set</h3>
-<ol style="list-style-type: decimal">
-<li>Who created it?</li>
-</ol>
-<ul>
-<li>“The database is maintained by researchers at the National Consortium for the Study of Terrorism and Responses to Terrorism (START), headquartered at the University of Maryland” Along with the Pinkerton Global Intelligence Service (PGIS)</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Why was it created?</li>
-</ol>
-<ul>
-<li>It was created to identify the risk of terrorism for clients of the PGIS.</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Where did you access it?</li>
-</ol>
-<ul>
-<li>The dataset can be accessed from <a href="https://www.kaggle.com/START-UMD/gtd" class="uri">https://www.kaggle.com/START-UMD/gtd</a> or <a href="https://data.world/data-society/global-terrorism-data" class="uri">https://data.world/data-society/global-terrorism-data</a></li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>What represents an “observation”?</li>
-</ol>
-<ul>
-<li>An observation is a documented terrorist attack. This can come from a wire service, government reports, and major international papers.</li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
-<li>What “variables” does each observation have?</li>
-</ol>
-<ul>
-<li>There are over 100 variables. The top three we are most interested in are casualties, target of attack, and type of attack.</li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>How big is the data set? If it is a subset of a larger data set, how was the sub-set created?</li>
-</ol>
-<ul>
-<li>Massive. Well over 180,000 recorded data. Each observation having more than 100 variables to describe the events.</li>
-</ul>
-<ol start="7" style="list-style-type: decimal">
-<li>If the data set represents people, who has been included and who has been excluded?</li>
-</ol>
-<ul>
-<li><p>Included: Those impacted by an attack, such as private land-owners, government officials, and civilians.</p></li>
-<li><p>Excluded: There are some countries that do not have a high number of attacks, it is possible for them to be excluded on the sole fact that they did have any observations that are recorded.</p></li>
-</ul>
+<p><strong>Who created it?</strong><br />
+The database was created and maintained by researchers at the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland. Those researchers are also partnered with the Pinkerton Global Intelligence Service (PGIS).</p>
+<p><strong>Why was it created?</strong><br />
+It was created to identify the risk of terrorism for clients of the PGIS.</p>
+<p><strong>Where did you access it?</strong> The dataset can be accessed from <a href="https://www.kaggle.com/START-UMD/gtd" class="uri">https://www.kaggle.com/START-UMD/gtd</a> or <a href="https://data.world/data-society/global-terrorism-data" class="uri">https://data.world/data-society/global-terrorism-data</a></p>
+<p><strong>What represents an “observation”?</strong><br />
+An observation is a documented terrorist attack. This can come from a wire service, government reports, and major international papers.</p>
+<p><strong>What “variables” does each observation have?</strong> There are roughly 135 variables. The top three we are most interested in are casualties, target of attack, and type of attack.</p>
+<p><strong>How big is the data set? If it is a subset of a larger data set, how was the sub-set created?</strong> Massive. Well over 180,000 recorded data. Each observation having more than 100 variables to describe the events.</p>
+<p><strong>If the data set represents people, who has been included and who has been excluded?</strong><br />
+<em>Included:</em> Those impacted by an attack, such as private land-owners, government officials, and civilians.</p>
+<p><em>Excluded:</em> There are some countries that do not have a high number of attacks, it is possible for them to be excluded on the sole fact that they did have any observations that are recorded.</p>
 </div>
 <div id="data-set-strengths-and-weaknesses" class="section level3">
 <h3>3.2 Data Set Strengths and Weaknesses</h3>
@@ -497,7 +480,7 @@ Autumn 2019</p>
 </div>
 <div id="data-wrangling" class="section level3">
 <h3>3.3 Data Wrangling</h3>
-<p><em>Please refer to 1.3.1:</em> “We will be shaving down the data to include columns that are deemed to be important for the data visualizations created. This means we will most likely not use columns that use strings as an input so those will be selected. Extremes will be found using functions in dplyr”. The columns we are most interested in are casualties, types of attacks, and targets of the attacks.</p>
+<p><em>Please refer to 1.3.1</em></p>
 </div>
 <div id="refer-to-appendix" class="section level3">
 <h3>3.4 Refer to Appendix</h3>
@@ -565,21 +548,21 @@ Autumn 2019</p>
 </div>
 <div id="links" class="section level2">
 <h2>9.0 LINKS</h2>
-<p>Link to Shiny App: <a href="https://jctroyer.shinyapps.io/Info-201-Final-Project/" class="uri">https://jctroyer.shinyapps.io/Info-201-Final-Project/</a></p>
-<div id="appendix-1-data-dictionary" class="section level3">
-<h3>APPENDIX 1: DATA DICTIONARY</h3>
+<p>Link to README.md: <a href="https://github.com/jctroyer/Info-201-Final-Project/wiki/Project-Overview" class="uri">https://github.com/jctroyer/Info-201-Final-Project/wiki/Project-Overview</a> Link to Shiny App: <a href="https://jctroyer.shinyapps.io/Info-201-Final-Project/" class="uri">https://jctroyer.shinyapps.io/Info-201-Final-Project/</a></p>
+</div>
+<div id="appendix-1-data-dictionary" class="section level2">
+<h2>APPENDIX 1: DATA DICTIONARY</h2>
 <p>In this appendix you should describe the variables that make up your data set, including: The name of the variable, a description of its meaning, the data type, and the measurement type. A suggestion format is a table such as this: Variable Name Description Data Type Measurement Type … … … …</p>
 </div>
-<div id="appendix-2-reflections" class="section level3">
-<h3>APPENDIX 2: REFLECTIONS</h3>
+<div id="appendix-2-reflections" class="section level2">
+<h2>APPENDIX 2: REFLECTIONS</h2>
 <p><strong>Joseph:</strong> I usually like to be the one behind a computer all day coding, however this is the first time I was in a team environment with code involved. As a developer of a team it becomes a lot more stressful with the time crunch, which is why I have a ton of respect for my groupmate, Dorothy. In addition, there are repercussions if something was not done properly and in a timely manner. This is a lot more nerve wrecking than the hackathons I have participated in, where they are very forgiving because it is just usually one weekend. An issue that did come up is that it is a little difficult to find a proper time to meet with everyone, instead it has been more of a one on one rather than a full team meeting. This project does help a little in seeing how a PM operates. Seeing what it takes to set up meetings and deadlines for certain tasks are encouraged to move through milestones swiftly.</p>
 <p><strong>Jazmynn:</strong> The project is developing slowly, but surely. I found it difficult to narrow the scope of the project and devise concise yet meaningful research questions that did not extend beyond the limits of our class. It was also difficult to find datasets that provide relevant and useful information to complement the main Global Terrorism Database (GTD) datasets we intend to use. Furthermore, However, upon closer examination of the codebook for the GTD datasets, I became increasingly interested and excited about the data analysis. In other regards, I would normally prefer to design and code rather than write, but for this part of the project, I contributed more to the report than the development of the Shiny app. As a result, I believe this experience challenged my critical thinking skills. With regards to the Shiny app, I did encounter some challenges with deploying the app, but it was immensely satisfying to be able to successfully deploy it after some troubleshooting. Although bugs and errors can be challenging, tackling these problems and searching for solutions is a skill I look forward to further developing as we continue to work on this project as I know that we will encounter more challenges in the near future. In that way, I think I am better preparing myself to be a better coder. In the future, I hope to schedule more regular or more frequent meeting times to work on the project together as a team rather than remotely, individually.</p>
 <p><strong>Dorothy:</strong> So far, this project has been both immensely challenging and fun. Though I was constantly frustrated with the long (and still currently ongoing) process of debugging, I feel like my self-teaching skills are one of my skills that have greatly increased. Because I encountered many more roadblocks creating our map than I thought I would, I ended up doing a lot of research into Shiny data visualizations (specifically maps), allowing me to learn about things such as .shp files which I hadn’t encountered before. Additionally, I think this stage of the project has allowed me to enjoy coding much more, as I really appreciate being able to see a visual product of all the work we’ve been doing and I also feel much more confident in R. In the future, I will try to have a deeper understanding of the code and the underlying processes before using them in a project, as it would definitely allow understanding errors in the output much easier. This portion of the project has definitely helped me develop my identity as a thinker and coder and allowed me to be more confident in tackling coding issues that I don’t know.</p>
 </div>
-<div id="appendix-3-use-of-envisioning-cards" class="section level3">
-<h3>APPENDIX 3: USE OF ENVISIONING CARDS</h3>
+<div id="appendix-3-use-of-envisioning-cards" class="section level2">
+<h2>APPENDIX 3: USE OF ENVISIONING CARDS</h2>
 <p>The envisioning cards were used to discuss the direct and indirect stakeholders involved in global terrorist attacks, explore the social and ethical implications of the problem, and consider the strengths and weaknesses of the datasets to be used in the project.</p>
-</div>
 </div>
 </div>
 
