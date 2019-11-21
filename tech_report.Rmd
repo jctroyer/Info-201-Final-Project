@@ -206,7 +206,6 @@ Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
 
 ## APPENDIX 1: DATA DICTIONARY  
 
-In this appendix you should describe the variables that make up your data set, including: The name of the variable, a description of its meaning, the data type, and the measurement type. A suggestion format is a table such as this: Variable Name Description Data Type Measurement Type … … … … 
 
 
 ## APPENDIX 2: REFLECTIONS 
