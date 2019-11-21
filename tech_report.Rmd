@@ -49,11 +49,11 @@ The sensitive subject of terrorist attacks will be addressed by bringing attenti
 
 ### 1.3.1 Data Wrangling and Info Viz
 
-Our main dataset is very robust, it contains a ton of information on the immense number of terror attacks throughout the years. We will be shaving down the data to include columns that are deemed to be important for the data visualizations created. This means we will most likely not use columns that use strings as an input so those will be selected. Extremes will be found using functions in dplyr. Along with extremes, we will display all attacks on a map for our information visualization. This data visualization will help explain that terrorism is not as rare as people think.
+Our main dataset is very robust. It contains a great deal of information on the number of terror attacks throughout the last forty years. The dataset will be reduced in size to accommodate the size limits for files that can be pushed to GitHub as well as for the ease of loading in the data for wrangling and analysis. Adjusted datasets will include only relevant columns that are important for the data visualizations that provide insights into our research questions. It is unlikely that columns using strings as an input will be selected. Extreme values will be found using functions in dplyr. Along with extremes, all attacks will be displayed on a map for our information visualization. This data visualization will help explain that terrorism is not as rare as people may think.
 
 ### 1.3.2 Intended Audience
 
-Our audience will most likely be government officials, and those that use terrorist attacks in their field of work, ex: journalism. However, it can be used by most anyone. Our goal is to be able to bring about a discourse about this issue, instead of something that is so taboo to talk about. Seeing it in a light where people’s emotions aren’t manipulated like what journalism tries to do.
+Government officials, journalists, and data analysts with a focus on national security are most likely the types of users to which this project will appeal or interest. However, this project and dataset can be used by most anyone. Our goal is to be able to initiate a discourse about this issue, and dissuade people from viewing this issue as taboo or too sensitive to discuss. People ought to see this in a light where people’s emotions are not manipulated or heavily influenced by journalists’ biases and political views.
 
 ### 1.4 Previous Work
 There are multiple existing organizations, researchers, and 
