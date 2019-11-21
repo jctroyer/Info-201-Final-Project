@@ -178,7 +178,9 @@ The scope of the project may still be too broad; however, we are working to thin
 We learned that global terrorism is immensely complex and that it is much too broad, complex, and large of an issue to make causal or predictive claims and analyses. However, through discussion about research questions, data visualizations, and future plans, we have learned to develop our critical thinking and coding skills. Another noteworthy lesson we learned was that it can be difficult to find datasets to fit our needs, and sometimes, we need to challenge ourselves to work with what we have available and to generate creative solutions.
 
 ### 6.3 Future Work
-The future work that you or someone else might pursue. 
+If we had more time and resources, our group would be interested in exploring how the amount of publicity and media coverage of terrorist attacks in different countries varies across countries and regions of the world. It would also be interesting to explore how terrorist attacks impact global economic trends as tensions between countries would likely affect trade.
+Other, perhaps more skilled and experienced researchers and data scientists could build on this project by exploring the causal and predictive claims that our group cannot make.
+ 
 
 
 ### 7.0 ACKNOWLEDGEMENTS 
