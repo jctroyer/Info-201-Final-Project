@@ -45,7 +45,7 @@ Terrorism affects individuals, communities, and societies on multiple levels. As
 
 ### 1.3 How Will it be Addressed?
 
-The sensitive subject of terrorist attacks will be addressed by bringing attention to the underlying issues that bring forth terrorism and its subsequent political violence. By understanding the root causes and finding correlations between various data about those attacks (date, location, cause, etc.), we can raise awareness and educate the public about various aspects of terrorism and about targeted regions that are not widely publicized by the media. This could potentially help with prevention and perhaps lower the severity of the attacks around the world.
+The sensitive subject of terrorist attacks will be addressed by bringing attention to the number of terrorist attacks that have occurred, where they occurred, and who and what was affected. By gaining awareness of these aspects of terrorism and finding correlations between various data about those attacks (date, location, cause, etc.), we can raise awareness and educate the public about terrorism and about targeted regions that are not widely publicized by the media.
 
 ### 1.3.1 Data Wrangling and Info Viz
 
