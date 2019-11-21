@@ -175,7 +175,7 @@ We have an incredibly robust dataset with a great deal of data that has the pote
 The scope of the project may still be too broad; however, we are working to think of ways to narrow this scope and focus our analysis on more specific, interesting, and meaningful questions using the datasets we have obtained. Additionally, with regards to the data specifically, we fear that the data may focus more on more heavily publicized attacks in larger or news-worthy countries as the data collected was based on articles and publications. Smaller, poorer countries may not be as well represented in the data since they may not have the resources to publish as much as other countries or may not receive as much attention.
 
 ### 6.2 Main Lessons Learned
-Main lessons that you learned
+We learned that global terrorism is immensely complex and that it is much too broad, complex, and large of an issue to make causal or predictive claims and analyses. However, through discussion about research questions, data visualizations, and future plans, we have learned to develop our critical thinking and coding skills. Another noteworthy lesson we learned was that it can be difficult to find datasets to fit our needs, and sometimes, we need to challenge ourselves to work with what we have available and to generate creative solutions.
 
 ### 6.3 Future Work
 The future work that you or someone else might pursue. 
