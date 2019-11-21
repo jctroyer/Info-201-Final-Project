@@ -183,11 +183,11 @@ Other, perhaps more skilled and experienced researchers and data scientists coul
  
 
 
-### 7.0 ACKNOWLEDGEMENTS 
+## 7.0 ACKNOWLEDGEMENTS 
 
 We wish to acknowledge the help provided by Benjamin Xie in the development of this project.
 
-### 8.0 REFERENCES 
+## 8.0 REFERENCES 
 
 Cato Institute. (2017). Cato 2017 Human Freedom Index (Version 3). [Data File]. Retrieved from https://www.kaggle.com/doyouevendata/cato-2017-human-freedom-index#cato_2017_human_freedom_index.csv  
 
@@ -196,6 +196,12 @@ Data Society. (2016). Global Terrorism Data. [Data File]. Retrieved from https:/
 Institute for Economics & Peace. (2018). Retrieved from http://visionofhumanity.org/indexes/terrorism-index/  
 
 Loayza, N. (2016, July 29). How to defeat terrorism: Intelligence, integration, and development. Retrieved from https://www.brookings.edu/blog/future-development/2016/07/25/how-to-defeat-terrorism-intelligence-integration-and-development/.
+
+
+## 9.0 LINKS
+Link to README.md: https://github.com/jctroyer/Info-201-Final-Project/wiki/Project-Overview
+Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
+
 
 ### APPENDIX 1: DATA DICTIONARY  
 
