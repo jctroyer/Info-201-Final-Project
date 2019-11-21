@@ -168,6 +168,11 @@ The analysis file contains R files used for data wrangling (i.e. calculating tot
 
 ### 6.1 Strengths and Weaknesses
 
+**Strengths:**
+We have an incredibly robust dataset with a great deal of data that has the potential to answer a number of interesting questions. Our team also has the critical thinking and coding skills to overcome any looming obstacles that we will likely encounter as we further develop our final project. This project also has a great deal of potential to explore various aspects of terrorism (time, location, type of attack and target, casualties. etc.).  
+
+**Weaknesses:**
+The scope of the project may still be too broad; however, we are working to think of ways to narrow this scope and focus our analysis on more specific, interesting, and meaningful questions using the datasets we have obtained. Additionally, with regards to the data specifically, we fear that the data may focus more on more heavily publicized attacks in larger or news-worthy countries as the data collected was based on articles and publications. Smaller, poorer countries may not be as well represented in the data since they may not have the resources to publish as much as other countries or may not receive as much attention.
 
 ### 6.2 Main Lessons Learned
 Main lessons that you learned
