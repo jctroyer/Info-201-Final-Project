@@ -1,3 +1,10 @@
+```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+library(knitr)
+source("tech_report_table.R")
+```
+
 # **INFO201 FINAL PROJECT | Technical Report**  
 
 **Project Code Name:** Global Terrorism  
@@ -208,6 +215,7 @@ Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
 
 In this appendix you should describe the variables that make up your data set, including: The name of the variable, a description of its meaning, the data type, and the measurement type. A suggestion format is a table such as this: Variable Name Description Data Type Measurement Type … … … … 
 
+`r table`
 
 ## APPENDIX 2: REFLECTIONS 
 
