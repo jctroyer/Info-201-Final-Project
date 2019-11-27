@@ -22,7 +22,7 @@ terrorism_unique <- terrorism %>%
 world <- readOGR("data/world_shape_file/TM_WORLD_BORDERS_SIMPL-0.3.shp")
 
 # Merge data
-# merged_data <- sp::merge(world, terrorism_unique, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE)
+merged_data <- sp::merge(world, terrorism_unique, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE)
 
 # Get list of types of attack targets
 attack_target <- terrrorism %>%

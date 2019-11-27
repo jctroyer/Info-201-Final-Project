@@ -6,5 +6,5 @@ source("data/terror_data.R")
 
 server <- function(input, output) {
   output$attack_map <- renderLeaflet(target_map(terrorism_select, 
-                                                world, input$attack_type))
+                                                merged_data, input$attack_type))
 }
