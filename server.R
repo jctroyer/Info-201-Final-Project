@@ -5,6 +5,6 @@ source("./analysis/attacks_by_country.R")
 source("data/terror_data.R")
 
 server <- function(input, output) {
-  output$attack_map <- renderLeaflet(target_map(terrrorism,
+  output$attack_map <- renderLeaflet(target_map(terrorism_select, 
                                                 world, input$attack_type))
 }

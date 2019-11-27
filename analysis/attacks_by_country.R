@@ -2,25 +2,23 @@
 library(dplyr)
 library(ggplot2)
 library(leaflet)
-library(tidyr)
 
 # Right now, the countries aren't matching up so I need to figure out
 # how to match up the ISO codes of the shp and the df
 
-# Filter by attack target and show death and injury count through hue
+# Map that filters by attack target and shows death and injury count through hue
 target_map <- function(df, world_data, attack_type) {
-  num_affected <- df %>%
-    mutate(naffected = df$nkill + df$nwound) %>%
-    select(country, country_txt, attacktype1_txt, nkill, nwound, naffected) %>%
-    drop_na()
 
-  # Select only the data that the user selects
-  select_df <- num_affected %>%
+  # Filter by attack type
+  select_df <- df %>%
     filter(attacktype1_txt == attack_type) %>%
     group_by(country_txt) %>%
-    summarize(impact = sum(naffected), deaths = sum(nkill),
-              injuries = sum(nwound))
-
+    summarize(impact = sum(naffected, na.rm = FALSE), deaths = sum(nkill, na.rm = FALSE),
+              injuries = sum(nwound, na.rm = FALSE))
+  
+  # Merge world data
+  merged_data <- sp::merge(world_data, select_df, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE)
+  
   # Create bins (how the legend will be ordered)
   mybins <- c(0, 10, 50, 100, 500, 1000, 10000, 50000)
 
@@ -31,7 +29,7 @@ target_map <- function(df, world_data, attack_type) {
   )
 
   # Generate map
-  leaflet(world_data) %>%
+  leaflet(merged_data) %>%
     addTiles() %>%
     setView(lat = 30, lng = 0, zoom = 1.5) %>%
     addPolygons(
@@ -39,6 +37,7 @@ target_map <- function(df, world_data, attack_type) {
       stroke = FALSE, smoothFactor = 0.2, fillOpacity = 0.7,
       fillColor = ~ mypal(select_df$impact),
       popup = paste(
+        "Country: ", select_df$country_txt, "<br>",
         "Killed: ", select_df$deaths, "<br>",
         "Wounded: ", select_df$injuries, "<br>"
       )
@@ -51,3 +50,13 @@ target_map <- function(df, world_data, attack_type) {
       opacity = 1
     )
 }
+  
+# show breakdown of attacks by country, maybe compare 
+# how are types of attacks diff in diff countries
+# what are the severity of attacts by country
+# talk about where our current questions down and where they could go in a writeup
+# api key in gitignore
+
+# mapping from country_txt to shape-country-name, then replace names in the terrorism dataframe by making a new column called country_txt_clean or something
+# within terrorism, group by country_txt and summarize
+# create new col info  -if there is info, show info, if no info, show NA

@@ -68,7 +68,7 @@ ui <- fluidPage(
       sidebarPanel(
         h4("Casualties By Attack Type"),
         p("Choose an attack type to see how much a country has been affected by
-        that specific type of attack.  Click on the map to view the specific
+          that specific type of attack.  Click on the map to view the specific
           casualty statistics."),
         selectizeInput("attack_type", "Attack Type", attack_target,
           multiple = FALSE,
@@ -87,10 +87,11 @@ ui <- fluidPage(
     tabPanel("Data Vizualization 2", fluid = TRUE,
       sidebarLayout(
         sidebarPanel(
-          h4("Data Viz 2 Input")
+          h4("Data Viz 2 Input"),
+          
         ),
         mainPanel(
-          h4("Data Viz 3 Output")
+          h4("Data Viz 2 Output")
         )
       )
     ),
