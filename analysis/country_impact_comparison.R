@@ -2,6 +2,7 @@
 library("dplyr")
 library("tidyr")
 library("ggplot2")
+library("plotly")
 
 # Load dataframe
 setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
@@ -41,9 +42,10 @@ affected_chart <- function(df, country_name) {
       x = reorder(attacktype1_txt, -affected),
       y = affected, fill = Impact_Type
     )) +
-    ggtitle("Effects of Attack Types on Individuals") +
+    ggtitle(paste("Effects of Attack Types on Individuals in", country_name)) +
     xlab("Attack Type") +
     ylab("Number of People Affected") +
+    coord_flip() +
     theme(
       plot.title = element_text(hjust = .5),
       axis.ticks = element_blank(),
