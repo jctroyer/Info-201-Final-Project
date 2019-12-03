@@ -16,19 +16,19 @@ ui <- fluidPage(
       fluid = TRUE,
 
       # Link to tech report
-      h4("Technical Report"),
+      h1("TECHNICAL REPORT"),
       a("Access technical report here",
         href="https://github.com/jctroyer/Info-201-Final-Project/wiki",
         target="_blank"),
       
-      h4("Background"),
+      h1("BACKGROUND"),
       p("Terrorism is the unlawful and systematic use of violence against a
         state, country, or group of people, motivated by various ideologies,
         as a form of political coercion. Global acts of terrorism have impacted
         hundreds, thousands, and millions of people throughout history in
         social, economic, and political ways. "),
 
-      h4("Stakeholders"),
+      h1("STAKEHOLDERS"),
       p("Direct stakeholders include political entities (i.e. a government,
         political figure, or organization), both as targets and instigators.
         As instigators, political entities plan and execute attacks against
@@ -91,15 +91,16 @@ ui <- fluidPage(
         sidebarPanel(
           h4("Number of Individuals Affected by Attack Type by Country"),
           p("Choose two countries to compare number of individuals affected."),
-          selectizeInput(inputId = "country", label = "Country 1", choices = country,
-                         multiple = FALSE, 
+          selectizeInput(inputId = "country_one", label = "Country 1",
+                         choices = country, multiple = FALSE, 
                          options = list(placeholder = "Select Country or Type to Search")),
-          selectizeInput(inputId = "country", label = "Country 2", choices = country,
-                         multiple = FALSE, 
+          selectizeInput(inputId = "country_two", label = "Country 2",
+                         choices = country, multiple = FALSE, 
                          options = list(placeholder = "Select Country or Type to Search"))
         ),
         mainPanel(
-          plotOutput("comparison")
+          plotOutput("comparison_one"),
+          plotOutput("comparison_two")
         )
       )
     ),

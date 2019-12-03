@@ -26,7 +26,7 @@ affected_chart <- function(df, country_name) {
   rel_data <- df %>%
     filter(country_txt == country_name) %>%
     mutate(affected = nkill + nwound) %>%
-    select(country_txt, attacktype1_txt, nkill, nwound, affected) %>%
+    dplyr::select(country_txt, attacktype1_txt, nkill, nwound, affected) %>%
     group_by(attacktype1_txt) %>%
     summarize(
       Killed = sum(nkill, na.rm = TRUE),

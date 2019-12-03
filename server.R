@@ -13,6 +13,7 @@ server <- function(input, output) {
   output$attack_map <- renderLeaflet(target_map(terrorism_select, merged_data,
                                                 input$attack_type))
   # Country Comparison Bar Graphs
-  output$comparison <- renderPlot(affected_chart(terrorism, input$country))
+  output$comparison_one <- renderPlot(affected_chart(terrorism, input$country_one))
+  output$comparison_two <- renderPlot(affected_chart(terrorism, input$country_two))
   # Summary Table
 }
