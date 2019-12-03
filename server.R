@@ -1,10 +1,20 @@
+# Load packages
 library(shiny)
 library(dplyr)
 
-source("./analysis/attacks_by_country.R")
+# Source file with dataframe
 source("data/terror_data.R")
+# Source analysis files that create info viz
+source("./analysis/attacks_by_country.R")
+source("./analysis/country_impact_comparison.R")
 
 server <- function(input, output) {
-  output$attack_map <- renderLeaflet(target_map(terrorism_select, 
-                                                merged_data, input$attack_type))
+  # Casualties Map
+  output$attack_map <- renderLeaflet(target_map(
+    terrorism_select,
+    merged_data, input$attack_type
+  ))
+  # Country Comparison Bar Graphs
+  output$comparison <- renderPlot(affected_chart(terrorism, input$country))
+  # Summary Table
 }

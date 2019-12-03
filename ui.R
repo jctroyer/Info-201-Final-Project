@@ -1,5 +1,7 @@
 # Load packages
 library(shiny)
+
+# Source file with dataframe used for project
 source("./data/terror_data.R")
 
 # Define UI
@@ -7,8 +9,8 @@ ui <- fluidPage(
 
   # Name of final project
   titlePanel("Global Terrorism: Effects on Individuals and Societies"),
+  
   tabsetPanel(
-
     # Project overview tab
     tabPanel("About The Project",
       fluid = TRUE,
@@ -64,11 +66,11 @@ ui <- fluidPage(
         to create the engaging data visualizations.")
     ),
 
-    tabPanel("Casualties Map", fluid = TRUE, sidebarLayout(
+    tabPanel("Casualties Map", fluid = TRUE,sidebarLayout(
       sidebarPanel(
         h4("Casualties By Attack Type"),
         p("Choose an attack type to see how much a country has been affected by
-          that specific type of attack.  Click on the map to view the specific
+          that specific type of attack.  Click on the map to view the more detailed
           casualty statistics."),
         selectizeInput("attack_type", "Attack Type", attack_target,
           multiple = FALSE,
@@ -84,14 +86,21 @@ ui <- fluidPage(
       )
     )),
 
-    tabPanel("Data Vizualization 2", fluid = TRUE,
+    tabPanel("Country Comparison", fluid = TRUE,
       sidebarLayout(
         sidebarPanel(
-          h4("Data Viz 2 Input"),
-          
+          h4("Number of Individuals Affected by Attack Type by Country"),
+          p("Choose two countries to compare number of individuals affected."),
+          selectizeInput("country", "Country", country,
+                         multiple = FALSE,
+                         options = list(
+                           placeholder = "Select",
+                           onInitialize = I('function() { this.setValue("Armed Assault"); }')
+                         )
+          )
         ),
         mainPanel(
-          h4("Data Viz 2 Output")
+          plotOutput("comparison")
         )
       )
     ),
