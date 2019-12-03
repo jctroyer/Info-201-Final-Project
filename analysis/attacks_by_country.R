@@ -16,9 +16,6 @@ target_map <- function(df, world_data, attack_type) {
     summarize(impact = sum(naffected, na.rm = FALSE), deaths = sum(nkill, na.rm = FALSE),
               injuries = sum(nwound, na.rm = FALSE))
   
-  # Merge world data
-  merged_data <- sp::merge(world_data, select_df, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE)
-  
   # Create bins (how the legend will be ordered)
   mybins <- c(0, 10, 50, 100, 500, 1000, 10000, 50000)
 
@@ -29,7 +26,7 @@ target_map <- function(df, world_data, attack_type) {
   )
 
   # Generate map
-  leaflet(merged_data) %>%
+  leaflet(world_data) %>%
     addTiles() %>%
     setView(lat = 30, lng = 0, zoom = 1.5) %>%
     addPolygons(
