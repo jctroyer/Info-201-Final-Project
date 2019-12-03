@@ -91,13 +91,12 @@ ui <- fluidPage(
         sidebarPanel(
           h4("Number of Individuals Affected by Attack Type by Country"),
           p("Choose two countries to compare number of individuals affected."),
-          selectizeInput("country", "Country", country,
-                         multiple = FALSE,
-                         options = list(
-                           placeholder = "Select",
-                           onInitialize = I('function() { this.setValue("Armed Assault"); }')
-                         )
-          )
+          selectizeInput(inputId = "country", label = "Country 1", choices = country,
+                         multiple = FALSE, 
+                         options = list(placeholder = "Select Country or Type to Search")),
+          selectizeInput(inputId = "country", label = "Country 2", choices = country,
+                         multiple = FALSE, 
+                         options = list(placeholder = "Select Country or Type to Search"))
         ),
         mainPanel(
           plotOutput("comparison")

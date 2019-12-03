@@ -31,3 +31,9 @@ merged_data <- sp::merge(world, terrorism_unique, by.x = "NAME", by.y = "country
 attack_target <- terrorism %>%
   dplyr::select(attacktype1_txt) %>%
   unique()
+
+# Extract country names for control widget
+country <- terrorism_df %>%
+  dplyr::select(country_txt) %>%
+  unique() %>%
+  arrange(country_txt)
