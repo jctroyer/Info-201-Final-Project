@@ -10,10 +10,8 @@ source("./analysis/country_impact_comparison.R")
 
 server <- function(input, output) {
   # Casualties Map
-  output$attack_map <- renderLeaflet(target_map(
-    terrorism_select,
-    merged_data, input$attack_type
-  ))
+  output$attack_map <- renderLeaflet(target_map(terrorism_select, merged_data,
+                                                input$attack_type))
   # Country Comparison Bar Graphs
   output$comparison <- renderPlot(affected_chart(terrorism, input$country))
   # Summary Table
