@@ -51,7 +51,7 @@ target_map <- function(df, world_data, attack_type) {
     )
 }
   
-# show breakdown of attacks by country, maybe compare 
+# show breakdown of attacks by country, maybe compare
 # how are types of attacks diff in diff countries
 # what are the severity of attacts by country
 # talk about where our current questions down and where they could go in a writeup

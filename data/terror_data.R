@@ -9,6 +9,9 @@ library(raster)
 terrorism <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
 
 # Group by country name and summarize for the info we want
+
+# terrorism_select info: country (code and name), attack, num killed and
+# wounded, and total number "affected" 
 terrorism_select <- terrorism %>%
   mutate(naffected = nkill + nwound) %>%
   dplyr::select(country, country_txt, attacktype1_txt, nkill, nwound, naffected)
