@@ -28,3 +28,8 @@ country <- terrorism %>%
   dplyr::select(country_txt) %>%
   unique() %>%
   arrange(country_txt)
+
+# Extract region names for control widget
+region <- terrorism %>%
+  dplyr::select(region_txt) %>%
+  unique()

@@ -4,9 +4,15 @@ library("tidyr")
 library("ggplot2")
 library("plotly")
 
+<<<<<<< HEAD
 # Load dataframe
 # setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
  terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
+=======
+# Load dataframe (test)
+# setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
+# terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
+>>>>>>> 1942220448883234336a99f2fe9241f66ce2a2cd
 
 # Extract country names for control widget
 country <- terrorism_df %>%
