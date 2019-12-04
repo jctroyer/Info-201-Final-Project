@@ -16,4 +16,5 @@ server <- function(input, output) {
   output$comparison_one <- renderPlot(affected_chart(terrorism, input$country_one))
   output$comparison_two <- renderPlot(affected_chart(terrorism, input$country_two))
   # Summary Table
+  output$tbl <- renderDT(region_summary(input$region))
 }

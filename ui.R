@@ -112,15 +112,22 @@ ui <- fluidPage(
       )
     ),
 
-    tabPanel("Data Visualization 3", fluid = TRUE,
-      sidebarLayout(
-        sidebarPanel(
-          h4("Data Viz 3 Input")
-        ),
-        mainPanel(
-          h4("Data Viz 3 Output")
+    tabPanel("Summary Table", fluid = TRUE, sidebarLayout(
+      sidebarPanel(
+        h4("Summary Table"),
+        p("This table will display specific information about different regions. Please select a region:"),
+        selectizeInput("region", "Region", region,
+                       multiple = FALSE,
+                       options = list(
+                         placeholder = "Select"
+                       )
         )
+      ),
+      
+      mainPanel(
+        DTOutput("tbl")
       )
+    )
     ),
 
     tabPanel("Conclusion",
