@@ -3,7 +3,6 @@ library(ggplot2)
 library(leaflet)
 library(rgdal)
 library(raster)
-library(DT)
 
 terrorism <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
 

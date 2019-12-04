@@ -7,6 +7,7 @@ source("data/terror_data.R")
 # Source analysis files that create info viz
 source("./analysis/attacks_by_country.R")
 source("./analysis/country_impact_comparison.R")
+source("./analysis/terror_table.R")
 
 server <- function(input, output) {
   # Casualties Map
@@ -16,5 +17,5 @@ server <- function(input, output) {
   output$comparison_one <- renderPlot(affected_chart(terrorism, input$country_one))
   output$comparison_two <- renderPlot(affected_chart(terrorism, input$country_two))
   # Summary Table
-  output$tbl <- renderDT(region_summary(input$region))
+  output$tbl <- renderDataTable(region_summary(input$region))
 }

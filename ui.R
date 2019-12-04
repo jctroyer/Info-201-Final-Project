@@ -125,7 +125,7 @@ ui <- fluidPage(
       ),
       
       mainPanel(
-        DTOutput("tbl")
+        dataTableOutput("tbl")
       )
     )
     ),
