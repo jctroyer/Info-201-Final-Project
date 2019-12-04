@@ -86,16 +86,21 @@ The members of our group, like many Americans and other citizens around the worl
 
 
 ## 2.0 RESEARCH QUESTIONS 
-Generally speaking, the project will explore the impact of global terrorism in individuals and societies. Impacts on individuals can be operationalized as the number of injuries, casualties, property damage, and personal  losses. Impacts on societies can include the type, scale, and target of the attack, especially if it was a large scale attack on a major leading political entity.   Questions include:  
+Generally speaking, the project will explore the impact of global terrorism in individuals and societies. Impacts on individuals can be operationalized as the number of injuries, casualties, property damage, and personal losses. Impacts on societies can include the type, scale, and target of the attack, especially if it was a large scale attack on a major leading political entity. Questions include:  
 
 - Which countries suffered from the most civilian casualties by various attack types?  
 - Does attack type and target impact the number of civilians impacted by the terrorist event?  
-- How do different attack types impact the severity of damage sustained by individuals through personal injury or property damage?
+- How do different attack types impact the severity of damage sustained by individuals through personal injury or property damage? (Focus on personal death and injury)  
+
+The **overarching research question** for this project is: Were individuals in different countries and  regions impacted differently, and how?  
+
+- The question of whether individuals were impacted differently is measured by the number of deaths and injuries sustained by individuals in different countries
+- The question of how individuals were impacted deals with the type of attack that was used against the targeted country  
 
 
 ## 3.0 THE DATA SET(S)   
 
-The dataset that will be used throughout this project is called  “Global Terrorism Database” from kaggle.com. It lists over 180,000 terrorist attacks from 1970 to 2017. The GTD contains more than 100 variables, using information from media outlets/articles that are not classified. However, the current data is too large for github so we took off certain rows (years we are not using) and columns that we will not be the main focus of our project. 
+The dataset that will be used throughout this project is called  “Global Terrorism Database” from kaggle.com. It lists over 180,000 terrorist attacks from 1970 to 2017. The GTD contains more than 100 variables, using information from media outlets/articles that are not classified. However, the current dataset is too large for github. To resolve this, certain rows were removed such that the project will focus only on the years between and including 2000 to 2017.
 
 
 ### 3.1 About the Data Set
@@ -126,7 +131,16 @@ _Excluded:_ There are some countries that do not have a high number of attacks, 
 
 ### 3.2 Data Set Strengths and Weaknesses
 
-You employ the envisioning cards to clarify the strengths and weaknesses of the data set(s). You describe the strengths and weaknesses of the data set. 
+Envisioning cards were deployed to evaluate the strengths and weaknesses of the Global Terrorism Dataset. See Appendix 3: Use of Envisioning Cards.  
+
+### 3.2.1 Dataset Strengths  
+One of the biggest strengths of the global terrorism dataset is that it is incredibly large and robust. It includes data on terrorist attacks from 1970 to 2017. The dataset contains roughly 135 features on various aspects of the terrorist attacks such as attack and target type, whether the attack was “successful,” property damage sustained from the attack, location, and much more. The robustness of this dataset allows for the consideration of lots of different potential research questions and insights.  
+
+### 3.2.2 Dataset Weaknesses  
+Although the dataset provides a wide variety of features, not every entry has significant or meaningful information. In other words, one weakness is that the dataset has a lot of NA values or missing pieces of data; not every column is worth studying. Other weaknesses include:  
+
+- The **size** of the dataset: this makes it difficult to load in data and push it to GitHub because the file sizes are so large.  
+- **Missing** (NA) **values**: with the large array of columns, some features simply do not apply to certain attacks or there is no information about that feature of an attack for a given country or entry.
 
 ### 3.3 Data Wrangling
 _Please refer to 1.3.1_ 
@@ -137,9 +151,15 @@ See Appendix 1: Data Dictionary.
 
 ## 4.0 INFORMATION VISUALIZATIONS 
 
-**Map**
+### 4.1 Map  
+The first visualization is a map with points that scale in size depending on the number of casualties in different countries. Due to the global nature of our data, a geographical map seemed like the most intuitive visualization. By also changing the size of the points on the map depending on the number of casualties, viewers can see the impact of terrorism in each country/region at a glance.  For further depth, two interactive features were added - a dropdown that allows users to select the type of attack they would like to study, as well as the ability to view additional details when users click on individual attacks on the map. This allows users to view the impact of specific types of attacks on certain regions such as the number of people wounded and the number of people killed during those attacks.  Hopefully, viewers will be able to leave with a geographical sense of how different attacks impact different regions after interacting with this map.  
 
-For our first Information visualization we decided to do a map. We are fairly familiar with how to code a map in leaflet, so we assume creating a shiny app will not be as difficult. Data comes from areas of the world, so what better way to display it than a geographical map? A map visualization is a great way of showing the robusts data we have because of the number of variables we can show within. At a glance you can tell certain information about the data, if you wanted more variables or a more in depth analysis of the type of attack it is, you can easily switch the column that is being used by the code. In addition, you would be able to see more details if a region is clicked upon. 
+### 4.2 Bar Graph Comparison  
+This is an interactive visualization in which users are able to select two different countries and compare the number of people impacted by a terrorist attack in that country and the attack types. Each bar represents the total number of people impacted (sum of deaths and injuries) by terrorist attacks in the specified country. Within each bar, the user can see a visual comparison of the number of people wounded versus the number of people killed in that attack by the different attack types used in that country. The graph also shows the attack types that have been used in the specified country and the correlating sums of information about casualties and injuries. Additionally, the graph is ordered such that the number of people impacted appears in increasing order. In this way, users are able to easily identify which attack types have had the greatest or least amount of impact on individuals in that country. Overall, the bar graph offers a visual comparison of the impact of different attack types on individuals in specific countries.  
+
+### 4.3 Data Table  
+For our second information visualization, we used a table. Our table displays 13 different bits of summary information about the overall dataset. The summary information changes depending on which region of the world the user selects. The table includes information such as the extremes (minimum and maximum) of certain variables (i.e. the number of total attacks in a certain region), showing which areas have been more prone to terror attacks and which areas have had fewer attacks. The user also has the ability to search the table and through entries in the table if they are looking for very specific data. This table allows the user to view more specific summary data about the issue.
+
 
 ## 5.0 TECHNICAL DESCRIPTION OF SHINY APPLICATION   
 
@@ -150,13 +170,19 @@ Certain data were selected and filtered, and were put into a shape (.shp) file. 
 
 ### 5.2 Libraries Used
 
-**Leaflet** is used to create the map and the popup widget that displays information about terror attacks in different areas of the world. 
+**Dplyr** is used to trim and wrangle the data such that only relevant columns are displayed in the data set. It is also used to select and filter certain columns and rows to obtain specific information for the leaflet popups.  
 
-**Dplyr** is used to trim and wrangle the data such that only relevant columns are displayed in the data set. It is also used to select and filter certain columns and rows to obtain specific information for the leaflet popups. 
+**ggplot2** is a library used to format various elements of the map and to generate the bar graphs that compare impacts of terrorism between two different countries.  
+
+**Leaflet** is used to create the map and the popup widget that displays information about terror attacks in different areas of the world.  
+
+**Raster** is used to help generate spatial components of the map.  
+
+**Rgdal** is used to help generate spatial components of the map.  
 
 **Shiny** is used to create the UI and server.  
 
-**ggplot2** is a supporting library to format various elements of the map. 
+**Shinythemes** is a supplemental library that is used to change the color scheme and overall aesthetic theme of the Shiny application.  
 
 ### 5.3 Organization of Code
 
@@ -174,10 +200,10 @@ The analysis file contains R files used for data wrangling (i.e. calculating tot
 
 ### 6.1 Strengths and Weaknesses
 
-**Strengths:**
+### 6.1.1 Strengths
 We have an incredibly robust dataset with a great deal of data that has the potential to answer a number of interesting questions. Our team also has the critical thinking and coding skills to overcome any looming obstacles that we will likely encounter as we further develop our final project. This project also has a great deal of potential to explore various aspects of terrorism (time, location, type of attack and target, casualties. etc.).  
 
-**Weaknesses:**
+### 6.1.2 Weaknesses
 The scope of the project may still be too broad; however, we are working to think of ways to narrow this scope and focus our analysis on more specific, interesting, and meaningful questions using the datasets we have obtained. Additionally, with regards to the data specifically, we fear that the data may focus more on more heavily publicized attacks in larger or news-worthy countries as the data collected was based on articles and publications. Smaller, poorer countries may not be as well represented in the data since they may not have the resources to publish as much as other countries or may not receive as much attention.
 
 ### 6.2 Main Lessons Learned
@@ -205,9 +231,8 @@ Loayza, N. (2016, July 29). How to defeat terrorism: Intelligence, integration, 
 
 
 ## 9.0 LINKS
-Link to README.md: https://github.com/jctroyer/Info-201-Final-Project/wiki/Project-Overview
+Link to README.md: https://github.com/jctroyer/Info-201-Final-Project/wiki/Project-Overview  
 Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
-
 
 ## APPENDIX 1: DATA DICTIONARY  
 
@@ -218,11 +243,23 @@ Link to Shiny App: https://jctroyer.shinyapps.io/Info-201-Final-Project/
 
 **Joseph:** I usually like to be the one behind a computer all day coding, however this is the first time I was in a team environment with code involved. As a developer of a team it becomes a lot more stressful with the time crunch, which is why I have a ton of respect for my groupmate, Dorothy. In addition, there are repercussions if something was not done properly and in a timely manner. This is a lot more nerve wrecking than the hackathons I have participated in, where they are very forgiving because it is just usually one weekend. An issue that did come up is that it is a little difficult to find a proper time to meet with everyone, instead it has been more of a one on one rather than a full team meeting. This project does help a little in seeing how a PM operates. Seeing what it takes to set up meetings and deadlines for certain tasks are encouraged to move through milestones swiftly.  
 
-**Jazmynn:** The project is developing slowly, but surely. I found it difficult to narrow the scope of the project and devise concise yet meaningful research questions that did not extend beyond the limits of our class. It was also difficult to find datasets that provide relevant and useful information to complement the main Global Terrorism Database (GTD) datasets we intend to use. Furthermore, However, upon closer examination of the codebook for the GTD datasets, I became increasingly interested and excited about the data analysis. In other regards, I would normally prefer to design and code rather than write, but for this part of the project, I contributed more to the report than the development of the Shiny app. As a result, I believe this experience challenged my critical thinking skills. With regards to the Shiny app, I did encounter some challenges with deploying the app, but it was immensely satisfying to be able to successfully deploy it after some troubleshooting. Although bugs and errors can be challenging, tackling these problems and searching for solutions is a skill I look forward to further developing as we continue to work on this project as I know that we will encounter more challenges in the near future. In that way, I think I am better preparing myself to be a better coder. In the future, I hope to schedule more regular or more frequent meeting times to work on the project together as a team rather than remotely, individually.  
-_FINAL EDIT_: Overall, the project was both challenging and fun lol sorry Dorothy.
+**Jazmynn:** The project developed slowly, but surely. I found it difficult to narrow the scope of the project and devise concise yet meaningful research questions that did not extend beyond the limits of our class. It was also difficult to find datasets that provide relevant and useful information to complement the main Global Terrorism Database (GTD) datasets we intend to use. These issues were resolved with the help and feedback of Benji, our teaching assistant.  
+In other regards, there were parts of the development process in which I contributed more to writing rather than designing and coding, and other parts when my role was flipped. As a result, this experience challenged my critical thinking, coding, and problem-solving skills.  
+With regards to the Shiny app, I did encounter some challenges with deploying the app, debugging, rendering visualizations, creating working widgets, and piecing everyone’s code together. Although the debugging process was long and tedious, it was immensely satisfying to be able to successfully publish and deploy the final Shiny app once all the troubleshooting was complete. Bugs and errors can be challenging, but tackling those problems and searching for solutions are skills that I look forward to further developing as a coder. 
 
-**Dorothy:** So far, this project has been both immensely challenging and fun. Though I was constantly frustrated with the long (and still currently ongoing) process of debugging, I feel like my self-teaching skills are one of my skills that have greatly increased.  Because I encountered many more roadblocks creating our map than I thought I would, I ended up doing a lot of research into Shiny data visualizations (specifically maps), allowing me to learn about things such as .shp files which I hadn’t encountered before.  Additionally, I think this stage of the project has allowed me to enjoy coding much more, as I really appreciate being able to see a visual product of all the work we’ve been doing and I also feel much more confident in R. In the future, I will try to have a deeper understanding of the code and the underlying processes before using them in a project, as it would definitely allow understanding errors in the output much easier.  This portion of the project has definitely helped me develop my identity as a thinker and coder and allowed me to be more confident in tackling coding issues that I don’t know.
+**Dorothy:** This project has been both immensely challenging and fun. Though I was constantly frustrated with the long process of debugging, I feel like my self-teaching skills are one of my skills that have greatly increased.  Because I encountered many more roadblocks creating our map than I thought I would, I ended up doing a lot of research into Shiny data visualizations (specifically maps), allowing me to learn about things such as .shp files which I hadn’t encountered before.  Additionally, I think this stage of the project has allowed me to enjoy coding much more, as I really appreciate being able to see a visual product of all the work we’ve been doing and I also feel much more confident in R. I have also realized that I have almost too much left to learn, and that to make things easier in the future, I will try to have a deeper understanding of the code and their underlying processes before using them.  This would definitely allow understanding errors in the output much easier, and maybe I wouldn’t have had to pull my hair out over the choropleth map before giving up.  However, this project has definitely helped me develop my identity as a thinker and coder and allowed me to be more confident in tackling coding issues that I don’t know.
 
 ## APPENDIX 3: USE OF ENVISIONING CARDS  
 
 The envisioning cards were used to discuss the direct and indirect stakeholders involved in global terrorist attacks, explore the social and ethical implications of the problem, and consider the strengths and weaknesses of the datasets to be used in the project. 
+The cards that were used include:  
+
+- **Direct Stakeholders**: used to brainstorm and consider direct stakeholders.  
+- **Indirect Stakeholders**: used to brainstorm and consider indirect stakeholders.  
+- **Elicit Stakeholders Views and Values**: used to further consider the stakeholders of the project, how global terrorism affects them, and why they may care about this project or about the overall issue this project seeks to address.  
+- **Crossing National Boundaries**: since the project addresses global terrorism, this card was used to consider how this issue and this project may be useful (or perhaps unuseful) in other countries.  
+- **Evaluate User Experience of Values**: used to consider the design of our visualizations, with regards to what insights the user may gain from different visualizations and why they may care.  
+- **Value Tensions**: used to consider the target and attack types mentioned in the dataset to inform our formation of research questions and our consideration of the problem statement.  
+- **Consider Key Values at Stake**: since terrorism is a result of conflicting or differing ideological values, this was used to consider the values of different stakeholders from different regions of the world in order to form our problem statement.  
+- **Work of the Future**: used to evaluate the dataset used for the project. Also used to consider the design of visualizations, to consider the subsets of the dataset the project would use, and to consider future ramifications of this project.  
+- **Obsolescence**: used to consider the strengths and weaknesses of the dataset.
