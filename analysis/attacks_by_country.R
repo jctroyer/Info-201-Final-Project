@@ -34,7 +34,7 @@ target_map <- function(df, world_data, attack_type) {
       stroke = FALSE, smoothFactor = 0.2, fillOpacity = 0.7,
       fillColor = ~ mypal(select_df$impact),
       popup = paste(
-        "Country: ", select_df$country_txt, "<br>",
+        #"Country: ", select_df$country_txt, "<br>",
         "Killed: ", select_df$deaths, "<br>",
         "Wounded: ", select_df$injuries, "<br>"
       )

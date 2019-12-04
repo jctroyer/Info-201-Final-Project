@@ -5,8 +5,8 @@ library("ggplot2")
 library("plotly")
 
 # Load dataframe
-setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
-terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
+# setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
+ terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
 
 # Extract country names for control widget
 country <- terrorism_df %>%
