@@ -16,7 +16,7 @@ terrorism_select <- terrorism %>%
   dplyr::select(country_txt, attacktype1_txt, nkill, nwound, latitude, longitude)
 
 # Merge data
-merged_data <- sp::merge(world, terrorism_unique, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE, all.x = FALSE)
+# merged_data <- sp::merge(world, terrorism_unique, by.x = "NAME", by.y = "country_txt", duplicateGeoms = TRUE, all.x = FALSE)
 
 # Get list of types of attack targets
 attack_target <- terrorism %>%
