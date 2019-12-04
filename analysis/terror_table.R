@@ -11,7 +11,7 @@ region <- terrorism %>%
   unique()
 
 region_summary <- function(region){
-  region_string <- toString("Middle East & North Africa")
+  region_string <- toString(region)
   region_filter <- terrorism %>% filter(region_txt == region_string)
   #
   all_country_attacked <- region_filter %>% count(country_txt)

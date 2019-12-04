@@ -1,11 +1,13 @@
 # Load packages
 library(shiny)
+library(shinythemes)
 
 # Source file with dataframe used for project
 source("./data/terror_data.R")
 
 # Define UI
 ui <- fluidPage(
+  theme = shinytheme("superhero"),
 
   # Name of final project
   titlePanel("Global Terrorism: Effects on Individuals and Societies"),
