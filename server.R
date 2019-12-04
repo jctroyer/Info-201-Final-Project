@@ -13,12 +13,8 @@ source("./analysis/terror_table.R")
 # Server
 server <- function(input, output) {
   # Casualties Map
-<<<<<<< HEAD
   output$attack_map <- renderLeaflet(point_map(terrorism_select, input$attack_type))
-=======
-  output$attack_map <- renderLeaflet(point_map(terrorism_select, 
-                                               input$attack_type))
->>>>>>> 7bf1144ef9497bcd00f3c22d43a125be0ebc1747
+
   # Country Comparison Bar Graphs
   output$comparison_one <- renderPlot(affected_chart(terrorism, input$country_one))
   output$comparison_two <- renderPlot(affected_chart(terrorism, input$country_two))
