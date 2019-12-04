@@ -18,20 +18,17 @@ ui <- fluidPage(
       sidebarPanel(
         h3("BACKGROUND | What is Terrorism?"),
         p("Terrorism is the unlawful and systematic use of violence against a state,
-        country, or group of people, motivated by various ideologies, as a form of
-        political coercion. Global acts of terrorism have impacted hundreds, thousands,
-        and millions of people throughout history in social, economic, and political ways."),
-        p("Terrorism occurs on local, national, and international levels.
-          Take - for instance - the white supremacist attack at the Unite the Rally
-          attack in 2019, which occurred on US soil in Charlottesville, VA by Americans.
-          This act of terrorism occurred on a more local level. Another example is the 
-          infamous al-Qaeda attack on the USA on September 11, 2001, which was a national
-          terrorist attack. On an international level, one can look back on World War II
-          and the Holocaust, which mainly targeted Jewish populations in Western Europe."),
+          country, or group of people, motivated by various ideologies, as a form of
+          political coercion. Global acts of terrorism have impacted hundreds,
+          thousands, and millions of people throughout history in social, economic,
+          and political regards and on local, national, and international levels."),
         p("Global terrorism is a threat to the health and well-being of both the 
-          targets at which the attacks are aimed, and to the innocent people that
-          sustain loss and damage as a perhaps unintended result of those attacks."),
-        h3("OUR PROJECT | Why do we Care?"),
+          targets at which the attacks are aimed, and to the innocent people that 
+          sustain loss and damage as a perhaps unintended result of those attacks. 
+          It is important to consider the effects of terrorist attacks on individuals,
+          communities, and societies as global acts of terrorism can have great social,
+          economic, and political repurcussions."),
+        h3("OUR PROJECT |Goals and Why We Care"),
         p("Terrorism affects individuals, communities, and societies on multiple levels.
           Aside from the obvious physical and psychological impacts on direct victims
           of terrorism, terrorism causes deep-rooted fear and insecurity within affected
@@ -40,24 +37,29 @@ ui <- fluidPage(
           it is important to be aware of the ways in which one can be affected and to
           potentially prepare ways in which to respond. It is also important in order 
           to be an informed citizen and to be aware of global issues."),
-        p("The sensitive subject of terrorist attacks will be addressed by 
+        p("We seek to shed light on the sensitve topic of terrorist attacks by 
           bringing attention to the number of terrorist attacks that have occurred,
-          where they occurred, and who and what was affected. By gaining awareness 
-          of these aspects of terrorism and finding correlations between various data
+          where they occurred, and who and what was affected. By bringing awareness 
+          to these aspects of terrorism and finding correlations between various data
           about those attacks (date, location, cause, etc.), we can raise awareness 
           and educate the public about terrorism and about targeted regions that are 
           not widely publicized by the media."),
-        p("We seek to shed light on global terrorist attacks, particularly on regions of
-          the world that people would not otherwise consider. Another goal is to put
-          the effects of terrorism into perspective with the number of individuals affected
-          as a result of these attacks, whether it was intentional or unintentional. 
-          Anyone could be a victim and anyone can be affected at any given time."),
-        h3("THE DATA"),
-        p("The dataset that will be used throughout this project is called 
-          Global Terrorism Database from kaggle.com. It lists over 180,000
-          terrorist attacks from 1970 to 2017. The GTD contains more than 100 variables,
-          using information from media outlets/articles that are not classified.
-          This project focuses on data from 2000-2017.")
+        h3("THE DATA | Global Terrorism Dataset"),
+        p("The dataset used throughout this project is called Global Terrorism Database
+          (GTD) from kaggle.com. It lists over 180,000 terrorist attacks from 1970 to 2017.
+          The GTD contains more than 135 features describing various aspects of terrorist 
+          events such as location, target and attack type, damage sustained, whether the 
+          attack was 'successful,' and more. The data was collected from researchers at 
+          the National Consortium for the Study of Terrorism and Responses to Terrorism 
+          (START) at the University of Maryland. Those researchers are also partnered with 
+          the Pinkerton Global Intelligence Service (PGIS) to collect and maintain this data.
+          Researchers obtained the data by reviewing articles that have been published about 
+          each terrorist attack."),
+        p("This project focuses on data from 2000 to  2017. From this 
+          subset, 111,856 entries were recorded. The main features of interest include the 
+          country in which the attack occurred, the type of attack that was used (i.e.
+          bombing, hostage, kidnapping), the number of deaths from that attack, and the 
+          number of people injured by the attack.")
       ),
       
       mainPanel(
@@ -132,7 +134,7 @@ ui <- fluidPage(
 
     tabPanel("Conclusion", fluid = TRUE, sidebarLayout(
       sidebarPanel(
-        h3("CONCLUSION"),
+        h3("CONCLUSION | Findings"),
         p("According to the insights gathered from the visualizations,
           it seems that a majority of terrorist attacks that occurred in 
           the 21st century were targeted at countries in Africa and the Middle East.
@@ -145,8 +147,14 @@ ui <- fluidPage(
         and coding skills. Another noteworthy lesson we learned was that it
         can be difficult to find datasets to fit our needs, and sometimes,
         we need to challenge ourselves to work with what we have available
-        and to generate creative solutions.
-")
+        and to generate creative solutions."),
+        p("Additionally, we found that the most terror attacks occurred
+          in the Middle East and South Asia. There was a total of about
+          forty-one thousand attacks in the Middle East and about 39 thousand
+          in South Asia. The attacks the city targeted are mainly in Afghanistan
+          and Iraq. Interestingly, the Philippines was ranked first in Southeast 
+          Asia for the greatest number of terrorist attacks. The Philippines had 
+          nearly five thousand attacks.")
       ),
       
       mainPanel(
