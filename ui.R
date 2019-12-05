@@ -92,7 +92,7 @@ ui <- fluidPage(
 
     tabPanel("Casualties Map", fluid = TRUE,sidebarLayout(
       sidebarPanel(
-        h4("Casualties By Attack Type"),
+        h4("CASUALTIES BY ATTACK TYPE"),
         p("Select an attack type to see how many individuals were affected
           (by personal death or injury) as a result of that type of attack.
           Zoom in on the map to view countries and cities and click on a point
@@ -104,7 +104,17 @@ ui <- fluidPage(
             maxOptions = 9, placeholder = "Select",
             onInitialize = I('function() { this.setValue("Armed Assault"); }')
           )
-        )
+        ),
+        h4("QUESTIONS"),
+        p("- How do attack types differ by country?"),
+        p("- At a glance, which area of the world seems to be
+          impacted most by terrorist attacks?"),
+        p("- Which attack types are most prevalent in different countries?"),
+        h4("FINDINGS"),
+        p("Unsurprisingly, the Middle East is impacted most by various terrorist attacks.
+          It also appears that bombing is the most common type of attack that yields the
+          most casualties and injuries. Much of North America and most of South America 
+          do not appear to be impacted much by terrorist attacks in terms of casualties.")
       ),
 
       mainPanel(
@@ -115,7 +125,7 @@ ui <- fluidPage(
     tabPanel("Country Comparison", fluid = TRUE,
       sidebarLayout(
         sidebarPanel(
-          h4("Number of Individuals Affected by Attack Type by Country"),
+          h4("NUMBER OF INDIVIDUALS AFFECTED BY ATTACK TYPE BY COUNTRY"),
           p("Select two countries via the drop down menu
             (or search and select a country by typing the country's name)
             to compare the number of individuals affected by the attack types
@@ -125,7 +135,15 @@ ui <- fluidPage(
                          options = list(placeholder = "Select Country or Type to Search")),
           selectizeInput(inputId = "country_two", label = "Country 2",
                          choices = country, multiple = FALSE, 
-                         options = list(placeholder = "Select Country or Type to Search"))
+                         options = list(placeholder = "Select Country or Type to Search")),
+          h4("QUESTIONS"),
+          p("- How do attack types differ by country?"),
+          p("- How are individuals impacted differently in different countries?"),
+          h4("FINDINGS"),
+          p("Some countries are targeted much less often than others. Thus, it seems that
+            individuals in countries in more terror-prone or terror-stricken regious like the
+            Middle East suffer more losses and injuries than other countries like Belara or
+            Jamaica.")
         ),
         mainPanel(
           plotlyOutput("comparison_one", height = 325, width = 900),
@@ -136,7 +154,7 @@ ui <- fluidPage(
 
     tabPanel("Summary Table", fluid = TRUE, sidebarLayout(
       sidebarPanel(
-        h4("Summary Table"),
+        h4("SUMMARY TABLE AND STATISTICS"),
         p("Select a region of the world (or search and select by typing the name of a region)
           to view a table that displays summary statistics about
           terrorist attacks in the chosen region. Search for certain stats using the search bar."),
@@ -145,7 +163,14 @@ ui <- fluidPage(
                        options = list(
                          placeholder = "Select"
                        )
-        )
+        ),
+        h4("QUESTIONS"),
+        p("- What are the 'safest' or 'most dangerous' countries and regions of the world?"),
+        h4("FINDINGS"),
+        p("Interestingly, Afghanistan is considered to be a part of the Southeast Asia region
+          and is the country that suffered the most from terrorist attacks, with over 12,000 attacks.
+          Alarmingly, private citizens and property were the most common targets of attacks
+          in this region.")
       ),
       
       mainPanel(
