@@ -2,17 +2,12 @@
 library("dplyr")
 library("tidyr")
 library("ggplot2")
+library("plotly")
 
 # Load dataframe
 # setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
 #terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
 #View(terrorism_df)
-
-# Extract country names for control widget
-country <- terrorism_df %>%
-  dplyr::select(country_txt) %>%
-  unique() %>%
-  arrange(country_txt)
 
 # FUNCTION TO PRODUCE BAR CHART FOR SINGLE COUNTRY SUCH THAT:
 #   - The x axis shows the attack type
@@ -42,7 +37,8 @@ affected_chart <- function(df, country_name) {
       x = reorder(attacktype1_txt, -affected),
       y = affected, fill = Impact_Type
     )) +
-    ggtitle(paste("Effects of Attack Types on Individuals in", country_name)) +
+    scale_fill_manual(values = c(rep(c("dodgerblue4", "dodgerblue2")))) +
+    ggtitle(paste("Effects of Attack Types on Individuals in", "India")) +
     xlab("Attack Type") +
     ylab("Number of People Affected") +
     coord_flip() +
@@ -51,8 +47,8 @@ affected_chart <- function(df, country_name) {
       axis.ticks = element_blank(),
       axis.text.x = element_text(angle = 90, hjust = 1)
     )
-  # Return the bar graph
-  chart
+  # Return interactive version of the bar graph
+  ggplotly(chart)
 }
 
 # Test to see if function works

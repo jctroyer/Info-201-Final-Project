@@ -1,3 +1,15 @@
+# Load packages
+library("dplyr")
+library("tidyr")
+library("ggplot2")
+library("plotly")
+
+# Load dataframe
+# setwd("~/2019 - 2020 Junior/AUT2019/INFO201 AE/Info-201-Final-Project/")
+ terrorism_df <- read.csv("data/global_terrorism.csv", stringsAsFactors = FALSE)
+
+
+
 
 rel_data <- terrorism_df %>% 
   filter(country_txt == "India") %>% 
@@ -74,6 +86,7 @@ chart <- ggplot(rel_data) +
     x = reorder(attacktype1_txt, -affected),
     y = affected, fill = Impact_Type
   )) +
+  scale_fill_manual(values = c(rep(c("dodgerblue4", "dodgerblue2")))) +
   ggtitle(paste("Effects of Attack Types on Individuals in", "India")) +
   xlab("Attack Type") +
   ylab("Number of People Affected") +
@@ -85,7 +98,7 @@ chart <- ggplot(rel_data) +
   )
 # Return the bar graph
 ggplotly(data = chart,
-         text = "affected")
+         tooltip = paste("Attack Type:", x))
 
 
 plot_ly(

@@ -1,6 +1,7 @@
 # Load packages
-library(shiny)
-library(shinythemes)
+library("shiny")
+library("shinythemes")
+library("plotly")
 
 # Source file with dataframe used for project
 source("./data/terror_data.R")
@@ -19,25 +20,23 @@ ui <- fluidPage(
         h3("BACKGROUND | What is Terrorism?"),
         p("Terrorism is the unlawful and systematic use of violence against a state,
           country, or group of people, motivated by various ideologies, as a form of
-          political coercion. Global acts of terrorism have impacted hundreds,
-          thousands, and millions of people throughout history in social, economic,
-          and political regards and on local, national, and international levels."),
+          political coercion. Global acts of terrorism have impacted millions 
+          of people throughout history on local, national, and international levels."),
         p("Global terrorism is a threat to the health and well-being of both the 
           targets at which the attacks are aimed, and to the innocent people that 
           sustain loss and damage as a perhaps unintended result of those attacks. 
           It is important to consider the effects of terrorist attacks on individuals,
           communities, and societies as global acts of terrorism can have great social,
           economic, and political repurcussions."),
-        h3("OUR PROJECT |Goals and Why We Care"),
+        h3("RESEARCH QUESTION | Questions to Consider"),
+        p("The", strong("overarching research question"), "for this project is: 
+          Were individuals in different countries and  regions 
+          impacted differently, and how?"),
+        h3("OUR PROJECT | Goals and Why We Care"),
         p("Terrorism affects individuals, communities, and societies on multiple levels.
           Aside from the obvious physical and psychological impacts on direct victims
           of terrorism, terrorism causes deep-rooted fear and insecurity within affected
-          populations. This problem is pertinent for any civilian or member of society as
-          it is difficult to predict when or where the next attack will occur. Therefore,
-          it is important to be aware of the ways in which one can be affected and to
-          potentially prepare ways in which to respond. It is also important in order 
-          to be an informed citizen and to be aware of global issues."),
-        p("We seek to shed light on the sensitve topic of terrorist attacks by 
+          populations. We seek to shed light on the sensitve topic of terrorist attacks by 
           bringing attention to the number of terrorist attacks that have occurred,
           where they occurred, and who and what was affected. By bringing awareness 
           to these aspects of terrorism and finding correlations between various data
@@ -63,7 +62,8 @@ ui <- fluidPage(
       ),
       
       mainPanel(
-        img(src = "https://www.gcsp.ch/sites/default/files/2019-04/Geneva%20Launch%20of%20Global%20Terrorism%20Index%20Report%202018_Web.jpg")
+        img(src = "https://www.gcsp.ch/sites/default/files/2019-04/Geneva%20Launch%20of%20Global%20Terrorism%20Index%20Report%202018_Web.jpg",
+            width = "95%", height = "95%")
       )
     )
     ),
@@ -106,8 +106,8 @@ ui <- fluidPage(
                          options = list(placeholder = "Select Country or Type to Search"))
         ),
         mainPanel(
-          plotOutput("comparison_one"),
-          plotOutput("comparison_two")
+          plotlyOutput("comparison_one", height = 325, width = 900),
+          plotlyOutput("comparison_two", height = 325, width = 900)
         )
       )
     ),
@@ -158,7 +158,8 @@ ui <- fluidPage(
       ),
       
       mainPanel(
-        img(src = "https://communicationinprint.files.wordpress.com/2016/07/cartoon-2.jpg?w=1300&h=768&crop=1")
+        img(src = "https://communicationinprint.files.wordpress.com/2016/07/cartoon-2.jpg?w=1300&h=768&crop=1",
+            width = "95%", height = "95%")
       )
     )
     )

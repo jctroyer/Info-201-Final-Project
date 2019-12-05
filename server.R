@@ -16,8 +16,8 @@ server <- function(input, output) {
   output$attack_map <- renderLeaflet(point_map(terrorism_select, input$attack_type))
 
   # Country Comparison Bar Graphs
-  output$comparison_one <- renderPlot(affected_chart(terrorism, input$country_one))
-  output$comparison_two <- renderPlot(affected_chart(terrorism, input$country_two))
+  output$comparison_one <- renderPlotly(affected_chart(terrorism, input$country_one))
+  output$comparison_two <- renderPlotly(affected_chart(terrorism, input$country_two))
   # Summary Table
   output$tbl <- renderDataTable(region_summary(input$region))
 }
