@@ -32,11 +32,22 @@ ui <- fluidPage(
         p("The", strong("overarching research question"), "for this project is: 
           Were individuals in different countries and  regions 
           impacted differently, and how?"),
+        p("- Which countries suffered from the most 
+          civilian casualties by various attack types?"),
+        p("- How do different attack types impact the severity of damage
+          sustained by individuals through personal injury or property damage?
+          (Focus on personal death and injury)"),
+        p("At a glance, which area of the world seems to be
+          impacted most by terrorist attacks?"),
+        p("- Which attack types are most prevalent in different countries?"),
+        p("- How many people are affected by various attack types?
+          (Measured by number of casualties, injuries, property damage)"),
         h3("OUR PROJECT | Goals and Why We Care"),
         p("Terrorism affects individuals, communities, and societies on multiple levels.
           Aside from the obvious physical and psychological impacts on direct victims
           of terrorism, terrorism causes deep-rooted fear and insecurity within affected
-          populations. We seek to shed light on the sensitve topic of terrorist attacks by 
+          populations."),
+        p("We seek to shed light on the sensitve topic of terrorist attacks by 
           bringing attention to the number of terrorist attacks that have occurred,
           where they occurred, and who and what was affected. By bringing awareness 
           to these aspects of terrorism and finding correlations between various data
@@ -58,12 +69,23 @@ ui <- fluidPage(
           subset, 111,856 entries were recorded. The main features of interest include the 
           country in which the attack occurred, the type of attack that was used (i.e.
           bombing, hostage, kidnapping), the number of deaths from that attack, and the 
-          number of people injured by the attack.")
+          number of people injured by the attack."),
+        h3("ABOUT US | Authors and Affiliation"),
+        p(strong("Authors:"), "Joseph Altamira, Jazmynn Combes-Troyer, Dorothy Lu"),
+        p(strong("Affiliation:"), "Info-201: Technical Foundations of Informatics"),
+        p("The Information School, University of Washington"),
+        p("Autumn 2019")
       ),
       
       mainPanel(
         img(src = "https://www.gcsp.ch/sites/default/files/2019-04/Geneva%20Launch%20of%20Global%20Terrorism%20Index%20Report%202018_Web.jpg",
-            width = "95%", height = "95%")
+            width = "95%", height = "95%"),
+        p(""),
+        img(src = "https://i0.wp.com/www.legalbites.in/wp-content/uploads/2018/06/International-Terrorism-concentrate.jpg?fit=3244%2C2225&ssl=1",
+            width = "95%", height = "95%"),
+        p(""),
+        img(src = "https://www.securitymagazine.com/ext/resources/Default-images/Responsive-Defaults/terrorist1-900px.jpg?1472739459",
+            width = "95%", height = "95%"),
       )
     )
     ),
@@ -86,7 +108,7 @@ ui <- fluidPage(
       ),
 
       mainPanel(
-        leafletOutput("attack_map", height = 500, width = 800)
+        leafletOutput("attack_map", height = 600, width = 900)
       )
     )),
 
